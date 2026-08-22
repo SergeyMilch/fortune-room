@@ -1,0 +1,26 @@
+{
+  "assets/audio/ambience/fortune-room-ambient.mp3": {
+    "durationSeconds": 30.041,
+    "bytes": 601382
+  },
+  "assets/audio/ambience/candle-crackle.mp3": {
+    "durationSeconds": 24.033,
+    "bytes": 384983
+  },
+  "assets/audio/crystal-ball/touch.wav": {
+    "durationSeconds": 0.36,
+    "bytes": 63548
+  },
+  "assets/audio/crystal-ball/charging-loop.mp3": {
+    "durationSeconds": 6.531,
+    "bytes": 131178
+  },
+  "assets/audio/crystal-ball/peak-shimmer.wav": {
+    "durationSeconds": 0.72,
+    "bytes": 127052
+  },
+  "assets/audio/crystal-ball/reveal-chime.wav": {
+    "durationSeconds": 1.4,
+    "bytes": 247004
+  }
+}

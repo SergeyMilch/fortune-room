@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Fortune Room",
+    "slug": "fortune-room",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "fortuneroom",
+    "android": {
+      "package": "com.fortuneroom.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#06090D"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-image",
+      "expo-audio",
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

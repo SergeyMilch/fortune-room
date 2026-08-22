@@ -1,0 +1,3608 @@
+{
+  "schemaVersion": 1,
+  "locale": "ru-RU",
+  "ritual": "crystal-ball",
+  "selectionPolicyHint": "persistent-shuffle-bag",
+  "entries": [
+    {
+      "id": "cb-work-013",
+      "text": "Незаметная часть проекта принесёт больше пользы при спокойном темпе.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-change-061",
+      "text": "Привычный порядок может привести к полезному освобождению.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-work-045",
+      "text": "Короткое уточнение может заметно ускорить следующий этап.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mysterious-020",
+      "text": "То, что сегодня появится второй раз, может оказаться просто красивой случайностью — и всё же запомнится.",
+      "category": "mysterious",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-decision-051",
+      "text": "Если один путь выглядит слишком сложным, посмотри, какой путь требует меньше внутреннего сопротивления.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-021",
+      "text": "Один незакрытый вопрос поможет убрать лишнюю работу.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-089",
+      "text": "Ответ, который пока не складывается, может стать началом новой мысли.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-094",
+      "text": "Один короткий момент напомнит, что не всё требует немедленного ответа.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-change-058",
+      "text": "Ситуация, которая казалась застывшей, вскоре будет восприниматься совсем иначе.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mood-017",
+      "text": "Небольшое раздражение может ослабнуть после короткой паузы.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-068",
+      "text": "Небольшая часть повседневности может освободить место для более удобного варианта.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-010",
+      "text": "Слишком много впечатлений не обязательно говорит о том, что ты идёшь не туда.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mood-005",
+      "text": "Потребность сравнивать себя с другими не обязательно означает, что вся ситуация такова.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-032",
+      "text": "Перемена не обязана быть большой, чтобы быть важной.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mysterious-016",
+      "text": "Повторяющееся слово поможет заметить скрытую связь между событиями.",
+      "category": "mysterious",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-decision-020",
+      "text": "Когда хочется выбрать самый быстрый вариант, сравни не обещания, а реальные последствия.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-050",
+      "text": "Один удачный момент может запустить цепочку других. Следующий шаг даст больше удовольствия, чем ожидалось.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-014",
+      "text": "То, что раньше работало автоматически, вскоре будет восприниматься совсем иначе.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-088",
+      "text": "Привычный маршрут или порядок действий откроет более простой взгляд на ситуацию.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-change-060",
+      "text": "Старый план может открыть более простой путь.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-063",
+      "text": "Старая симпатия напомнит, что тепло часто проявляется в мелочах.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-030",
+      "text": "Твоя настойчивость может наконец дать приятный отклик. Следующий шаг даст больше удовольствия, чем ожидалось.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-065",
+      "text": "То, что сегодня идёт не по плану, вскоре перестанет казаться таким запутанным.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-075",
+      "text": "Чья-то искренняя поддержка напомнит, что усилия не пропали зря.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-positive-077",
+      "text": "Заслуженное внимание может открыть ещё одну хорошую возможность.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-work-056",
+      "text": "Разговор по делу вернёт ощущение контроля над задачами.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mysterious-023",
+      "text": "Место, о котором ты давно не вспоминал, может связать настоящее с забытым вопросом.",
+      "category": "mysterious",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-058",
+      "text": "Одна неприметная возможность станет понятнее, если не торопить события.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-064",
+      "text": "Когда в голове слишком много аргументов, не принимай срочность за важность.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-047",
+      "text": "То, что между вами осталось недосказанным, покажет ценность простого присутствия.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-077",
+      "text": "Сейчас полезнее наблюдать, чем ускорять события. Ситуация сама покажет слабое место.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-067",
+      "text": "Ответ, пришедший не напрямую, может оказаться маленьким поворотным знаком.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-069",
+      "text": "Не обесценивай маленький успех. Приятное совпадение может снять лишнее напряжение.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-work-060",
+      "text": "Короткое уточнение принесёт больше пользы при спокойном темпе.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mood-043",
+      "text": "Сомнение в собственном темпе не обязательно означает, что вся ситуация такова.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-decision-059",
+      "text": "Когда решение можно отложить без последствий, решение станет проще после одного уточняющего факта.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-love-060",
+      "text": "Мягкая пауза в разговоре может открыть место для более честного общения.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-change-037",
+      "text": "Один старый сценарий покажет, что пришло время немного перестроиться.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-caution-001",
+      "text": "Не перегружай день необязательными обещаниями — это снизит шанс возвращаться к вопросу второй раз.",
+      "category": "caution",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mood-025",
+      "text": "Слишком много впечатлений может отступить, когда появится немного пространства.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-006",
+      "text": "Сегодня стоит заметить хорошее, даже если оно небольшое. Рядом окажется больше поддержки, чем кажется.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-055",
+      "text": "То, что долго оставалось неизменным, может постепенно остаться в прошлом.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mysterious-011",
+      "text": "Странное совпадение подскажет направление не прямо, а через ассоциацию.",
+      "category": "mysterious",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-work-039",
+      "text": "Разговор по делу поможет завершить то, что слишком долго висело.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-040",
+      "text": "Привычный способ действовать может постепенно остаться в прошлом.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-024",
+      "text": "То, во что ты уже вложил силы, поможет увидеть собственный прогресс.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-036",
+      "text": "Событие, к которому ты не готовился, может оказаться важнее, чем выглядит.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-love-011",
+      "text": "Один знак внимания покажет ценность простого присутствия.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-041",
+      "text": "Разговор по делу может неожиданно дать хороший результат.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-decision-032",
+      "text": "Когда хочется выбрать самый быстрый вариант, сначала убери то, что точно не подходит.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-work-027",
+      "text": "Небольшая идея поможет освободить внимание для главного.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-056",
+      "text": "Небольшая приятная неожиданность может приятно завершить затянувшийся вопрос.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-045",
+      "text": "Один удачный момент может запустить цепочку других. День может закончиться приятнее, чем начался.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-change-025",
+      "text": "То, что долго оставалось неизменным, перестанет быть единственно возможным.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-053",
+      "text": "Новый интерес поможет почувствовать больше близости.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-057",
+      "text": "Сегодня стоит заметить хорошее, даже если оно небольшое. Следующий шаг даст больше удовольствия, чем ожидалось.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mysterious-035",
+      "text": "Повторяющееся слово может оказаться просто красивой случайностью — и всё же запомнится.",
+      "category": "mysterious",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-019",
+      "text": "Один затянувшийся этап может неожиданно получить новое продолжение.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-032",
+      "text": "То, что ты считаешь мелочью, может привести к полезному совпадению.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-positive-041",
+      "text": "Сохрани внимание к тому, что уже получается. Нужный человек может откликнуться.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-001",
+      "text": "Случайная возможность может появиться раньше, чем ты ждёшь.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mood-013",
+      "text": "Сомнение в собственном темпе не обязательно определяет весь день.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-033",
+      "text": "Одна неприметная возможность может оказаться маленьким поворотным знаком.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-120",
+      "text": "Обычный день скоро приобретёт более ясный смысл.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-083",
+      "text": "Не пытайся собрать всю картину за один раз. Лишнее постепенно отсеется.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-032",
+      "text": "Небольшой жест покажет ценность простого присутствия.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-mood-001",
+      "text": "Не оценивай весь путь по одному неудачному часу.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-066",
+      "text": "Если выбор строится только на страхе упустить шанс, отдели собственное желание от чужих ожиданий.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-037",
+      "text": "Небольшая приятная неожиданность может появиться раньше, чем ты ждёшь.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-012",
+      "text": "Хорошее совпадение станет хорошим знаком для следующего шага.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mysterious-038",
+      "text": "Повторяющееся слово подскажет направление не прямо, а через ассоциацию.",
+      "category": "mysterious",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-029",
+      "text": "Небольшая подготовка может стать полезнее большого, но расплывчатого плана.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mysterious-028",
+      "text": "Место, о котором ты давно не вспоминал, окажется интереснее, чем кажется сначала.",
+      "category": "mysterious",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-positive-036",
+      "text": "Хорошая идея может приятно завершить затянувшийся вопрос.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-035",
+      "text": "Хорошие вещи не всегда приходят громко. Следующий шаг даст больше удовольствия, чем ожидалось.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-love-017",
+      "text": "Совместный простой момент станет понятнее, если не торопить выводы.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-021",
+      "text": "Ощущение, что день идёт не так, может ослабнуть после короткой паузы.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-014",
+      "text": "Старая симпатия может вернуть ощущение взаимности.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-063",
+      "text": "Позволь себе принять удачный момент без подозрений. Нужный человек может откликнуться.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-mysterious-009",
+      "text": "То, что сегодня появится второй раз, может неожиданно совпасть с твоей текущей мыслью.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-change-064",
+      "text": "То, что раньше работало автоматически, попросит гибкости, а не резкого разворота.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-010",
+      "text": "Приятный ответ окажется очень кстати.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-027",
+      "text": "Старая симпатия может стать началом нового уровня доверия.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-change-063",
+      "text": "Старое ожидание может привести к полезному освобождению.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mysterious-027",
+      "text": "Вопрос от незнакомого человека станет необычным акцентом этого дня.",
+      "category": "mysterious",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-003",
+      "text": "Старый план может постепенно остаться в прошлом.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-positive-008",
+      "text": "Добрый жест может принести лёгкое чувство удачи.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-008",
+      "text": "Знакомый ритм станет началом более удобного порядка.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-076",
+      "text": "Сегодня полезно сказать «да» чему-то лёгкому и доброму.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-113",
+      "text": "Привычный маршрут или порядок действий поможет увидеть ситуацию с другой стороны.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mood-032",
+      "text": "Потребность всё контролировать может отступить, когда появится немного пространства.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-007",
+      "text": "То, что ты считаешь мелочью, вскоре перестанет казаться таким запутанным.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-003",
+      "text": "Незаметный прогресс даст больше уверенности без лишней суеты.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-positive-007",
+      "text": "Хорошая идея станет хорошим знаком для следующего шага.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-work-051",
+      "text": "То, что давно лежит в списке, поможет освободить внимание для главного.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-019",
+      "text": "Твоя настойчивость может наконец дать приятный отклик. Маленький шанс окажется вполне реальным.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-positive-084",
+      "text": "Хорошая идея окажется очень кстати.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-019",
+      "text": "Обрати внимание на то, что повторится дважды. Всё начнёт складываться без давления.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-013",
+      "text": "Если выбор кажется равным, сначала убери то, что точно не подходит.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-089",
+      "text": "Небольшой повод улыбнуться сделает день заметно легче.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-049",
+      "text": "Небольшая дистанция напомнит, что тепло часто проявляется в мелочах.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-054",
+      "text": "Если выбор строится только на страхе упустить шанс, проверь, какой вариант оставляет тебе больше свободы.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-025",
+      "text": "Незаметный выбор может привести к полезному совпадению.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-018",
+      "text": "Новый интерес может оказаться значимее долгих объяснений.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-068",
+      "text": "Заслуженное внимание окажется очень кстати.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-115",
+      "text": "Чужая фраза, услышанная мимоходом, может оказаться важнее, чем выглядит.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-040",
+      "text": "Совместный простой момент может вернуть ощущение взаимности.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-decision-047",
+      "text": "Если сомнение возвращается снова, попробуй представить, что советуешь это другому человеку.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-change-048",
+      "text": "Не требуй от перемен мгновенной ясности.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-004",
+      "text": "Задача, которую хочется отложить, сделает результат заметнее.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-change-038",
+      "text": "То, что ты давно откладывал, попросит гибкости, а не резкого разворота.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-029",
+      "text": "То, что долго оставалось на фоне, скоро приобретёт более ясный смысл.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-082",
+      "text": "Незаметный прогресс станет хорошим знаком для следующего шага.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-025",
+      "text": "Незаметная часть проекта может стать полезнее большого, но расплывчатого плана.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-055",
+      "text": "То, что ты сделал раньше, может приятно завершить затянувшийся вопрос.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-love-041",
+      "text": "Слова, которые долго не звучали может стать началом нового уровня доверия.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-059",
+      "text": "То, что долго оставалось на фоне, свяжет между собой несколько разрозненных вещей.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-050",
+      "text": "Один незакрытый вопрос принесёт больше пользы при спокойном темпе.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-090",
+      "text": "Позволь себе принять удачный момент без подозрений. Рядом окажется больше поддержки, чем кажется.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-033",
+      "text": "Когда в голове слишком много аргументов, не ищи идеальный вариант, ищи достаточно хороший.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-097",
+      "text": "Сейчас полезнее наблюдать, чем ускорять события. Лишнее постепенно отсеется.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-039",
+      "text": "Небольшая пауза в привычном ритме напомнит, что не всё требует немедленного ответа.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-019",
+      "text": "Неожиданное сообщение покажет, где важнее слушать, чем отвечать.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-038",
+      "text": "Чья-то искренняя поддержка может напомнить, что хорошие перемены приходят не только по плану.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-031",
+      "text": "Когда решение можно отложить без последствий, сравни не обещания, а реальные последствия.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-love-045",
+      "text": "Небольшая дистанция может стать началом нового уровня доверия.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-055",
+      "text": "Чужая фраза, услышанная мимоходом, откроет более простой взгляд на ситуацию.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-007",
+      "text": "Совместный простой момент поможет почувствовать больше близости.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-love-062",
+      "text": "Чувство, которое трудно назвать, напомнит, что тепло часто проявляется в мелочах.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-035",
+      "text": "Небольшая часть повседневности вскоре будет восприниматься совсем иначе.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-work-014",
+      "text": "Разговор по делу может заметно ускорить следующий этап.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mood-046",
+      "text": "Небольшое раздражение может смениться после простого приятного действия.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mysterious-019",
+      "text": "Неожиданное имя станет маленьким поводом посмотреть внимательнее.",
+      "category": "mysterious",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-044",
+      "text": "То, что раньше работало автоматически, станет началом более удобного порядка.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-046",
+      "text": "Если сомнение возвращается снова, обрати внимание на тот, после которого становится спокойнее.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-038",
+      "text": "Доверься фактам, которые проявятся сами. Правильный вопрос окажется важнее готового ответа.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-016",
+      "text": "Спокойное облегчение вернёт ощущение, что всё движется.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-049",
+      "text": "Привычный порядок вскоре потребует небольшого обновления.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mysterious-017",
+      "text": "Старый предмет напомнит о старой идее с новым смыслом.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-love-029",
+      "text": "Обрати внимание на то, рядом с кем тебе легче быть собой.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-068",
+      "text": "Ответ, который пока не складывается, поможет заметить то, что раньше было незаметно.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-001",
+      "text": "Старое сомнение вскоре перестанет казаться таким запутанным.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-caution-009",
+      "text": "Не торопись соглашаться только из-за срочности — так ты избежишь ненужной путаницы.",
+      "category": "caution",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mysterious-018",
+      "text": "Сон или образ станет маленьким поводом посмотреть внимательнее.",
+      "category": "mysterious",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mysterious-012",
+      "text": "Вопрос от незнакомого человека подскажет направление не прямо, а через ассоциацию.",
+      "category": "mysterious",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-work-006",
+      "text": "Один чистый час без отвлечений может неожиданно дать хороший результат.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-066",
+      "text": "Ответ, который пока не складывается, даст повод немного изменить привычный ритм.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-006",
+      "text": "Прислушайся к первой спокойной мысли. Появится более спокойное объяснение.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-001",
+      "text": "Если выбор кажется равным, не спеши закрывать вопрос сегодня.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-085",
+      "text": "Приятное изменение планов может неожиданно улучшить настроение.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-098",
+      "text": "То, что сегодня идёт не по плану, напомнит о том, что действительно важно.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-059",
+      "text": "Простой черновик принесёт больше пользы при спокойном темпе.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-050",
+      "text": "Привычный порядок может неожиданно получить новое продолжение.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-005",
+      "text": "Сейчас есть повод двигаться дальше чуть увереннее. Небольшая удача может прийти через обычное дело.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-072",
+      "text": "Заслуженное внимание может появиться раньше, чем ты ждёшь.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-021",
+      "text": "Небольшой жест станет понятнее, если не торопить выводы.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-052",
+      "text": "Один незакрытый вопрос поможет завершить то, что слишком долго висело.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mysterious-043",
+      "text": "Неожиданное имя станет необычным акцентом этого дня.",
+      "category": "mysterious",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mood-029",
+      "text": "Ощущение спешки может отступить, когда появится немного пространства.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-034",
+      "text": "Чья-то забота прояснит то, что раньше приходилось додумывать.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-046",
+      "text": "Один старый сценарий перестанет быть единственно возможным.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-057",
+      "text": "Новый интерес покажет ценность простого присутствия.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-049",
+      "text": "Если ты уже несколько раз менял решение, не принимай срочность за важность.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-048",
+      "text": "Когда решение зависит от чужого мнения, попробуй представить, что советуешь это другому человеку.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-116",
+      "text": "Одна неприметная возможность может неожиданно облегчить следующий шаг.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-love-052",
+      "text": "Один искренний вопрос может неожиданно вернуть лёгкость.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-work-031",
+      "text": "Небольшая подготовка принесёт больше пользы при спокойном темпе.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mysterious-008",
+      "text": "Вопрос от незнакомого человека окажется интереснее, чем кажется сначала.",
+      "category": "mysterious",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-positive-044",
+      "text": "То, что ты сделал раньше, напомнит, что усилия не пропали зря.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-work-044",
+      "text": "Незаметная часть проекта может открыть удачную последовательность действий.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-103",
+      "text": "Позволь ситуации раскрыться ещё немного. Нужный момент будет легко узнать.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mysterious-031",
+      "text": "То, что сегодня появится второй раз, может открыть любопытную цепочку мыслей.",
+      "category": "mysterious",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-052",
+      "text": "Смотри не на громкие знаки, а на повторяющиеся детали. Ты увидишь, где был лишний поворот.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-decision-045",
+      "text": "Если оба пути ведут вперёд, посмотри, какой путь требует меньше внутреннего сопротивления.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-109",
+      "text": "Вопрос, который кажется слишком простым, напомнит о том, что действительно важно.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-052",
+      "text": "Когда в голове слишком много аргументов, сделай сначала самый обратимый шаг.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-change-053",
+      "text": "Сейчас полезно оставить запас для нового варианта.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-055",
+      "text": "Старая симпатия покажет, где важнее слушать, чем отвечать.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-055",
+      "text": "Если выбор кажется равным, дай себе время увидеть слабое место каждого варианта.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-037",
+      "text": "Один чистый час без отвлечений может открыть удачную последовательность действий.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-work-034",
+      "text": "Спокойная последовательность действий поможет убрать лишнюю работу.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-010",
+      "text": "Спокойная честность может убрать лишнее напряжение.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-083",
+      "text": "Спокойное облегчение напомнит, что усилия не пропали зря.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-positive-013",
+      "text": "Приятное изменение планов вернёт ощущение, что всё движется.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-044",
+      "text": "Слова, которые долго не звучали станет понятнее, если не торопить выводы.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-love-065",
+      "text": "Привычное общение может вернуть ощущение взаимности.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mysterious-013",
+      "text": "Фраза, услышанная дважды, поможет заметить скрытую связь между событиями.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mood-011",
+      "text": "Небольшая потеря мотивации может раствориться быстрее, чем кажется.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-decision-003",
+      "text": "Если хочется решить всё немедленно, сначала убери то, что точно не подходит.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mood-041",
+      "text": "Тяжёлое послевкусие разговора станет легче, если убрать один лишний источник внимания.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-018",
+      "text": "Ощущение спешки может оказаться временным, а не важным сигналом.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-011",
+      "text": "Новый ритм может оказаться спокойнее старого.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-positive-086",
+      "text": "Небольшой повод улыбнуться может открыть ещё одну хорошую возможность.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-085",
+      "text": "Вопрос, который кажется слишком простым, напомнит, что не всё требует немедленного ответа.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-065",
+      "text": "Ситуация, которая казалась застывшей, вскоре потребует небольшого обновления.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-031",
+      "text": "Привычный способ действовать станет началом более удобного порядка.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-love-012",
+      "text": "Слова, которые долго не звучали даст шанс услышать друг друга спокойнее.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-decision-027",
+      "text": "Если выбор кажется равным, не принимай срочность за важность.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-caution-003",
+      "text": "Не перегружай день необязательными обещаниями — спокойная проверка полезнее быстрой реакции.",
+      "category": "caution",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-005",
+      "text": "Когда оба варианта выглядят убедительно, не спеши закрывать вопрос сегодня.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-021",
+      "text": "Не пропусти возможность порадоваться простому. Приятное совпадение может снять лишнее напряжение.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-025",
+      "text": "Один удачный момент может запустить цепочку других. Что-то хорошее окажется совсем рядом.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mood-024",
+      "text": "Небольшая потеря мотивации не обязательно означает, что вся ситуация такова.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-080",
+      "text": "Удачный момент может принести лёгкое чувство удачи.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-051",
+      "text": "Знакомый ритм попросит гибкости, а не резкого разворота.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-caution-005",
+      "text": "Если что-то звучит слишком удобно, проверь условия — это сохранит больше свободы для следующего шага.",
+      "category": "caution",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-019",
+      "text": "Короткое уточнение может неожиданно дать хороший результат.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-061",
+      "text": "Старая симпатия прояснит то, что раньше приходилось додумывать.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-012",
+      "text": "То, что давно лежит в списке, принесёт больше пользы при спокойном темпе.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-067",
+      "text": "Если один вариант требует постоянно себя уговаривать, отдели собственное желание от чужих ожиданий.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-071",
+      "text": "Позволь себе принять удачный момент без подозрений. Одна добрая новость изменит общий тон дня.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-general-114",
+      "text": "Оставь немного места для неожиданности. Неопределённость станет меньше.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-009",
+      "text": "Маленькая победа даст больше уверенности без лишней суеты.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-079",
+      "text": "Приятный ответ поможет выдохнуть и посмотреть вперёд спокойнее.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-change-001",
+      "text": "То, что долго оставалось неизменным, попросит гибкости, а не резкого разворота.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-004",
+      "text": "Один знак внимания поможет почувствовать больше близости.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-decision-006",
+      "text": "Когда хочется получить ещё одно подтверждение, сократи выбор до одного конкретного следующего действия.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-053",
+      "text": "Чуть больше открытости сегодня сыграет в твою пользу. Ты заметишь результат собственных усилий.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mysterious-007",
+      "text": "Сон или образ может открыть любопытную цепочку мыслей.",
+      "category": "mysterious",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-work-038",
+      "text": "Один чистый час без отвлечений может убрать лишнюю неопределённость.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-026",
+      "text": "Чувство, которое трудно назвать, может неожиданно вернуть лёгкость.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-015",
+      "text": "Ситуация, которая казалась застывшей, станет началом более удобного порядка.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-caution-025",
+      "text": "Не торопись соглашаться только из-за срочности — это снизит шанс возвращаться к вопросу второй раз.",
+      "category": "caution",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-048",
+      "text": "Прислушайся к первой спокойной мысли. Ситуация сама покажет слабое место.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mood-044",
+      "text": "Потребность сравнивать себя с другими может раствориться быстрее, чем кажется.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-093",
+      "text": "Один короткий момент поможет увидеть ситуацию с другой стороны.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-054",
+      "text": "Чья-то забота может убрать лишнее напряжение.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-065",
+      "text": "Сегодня полезно сказать «да» чему-то лёгкому и доброму. Нужный человек может откликнуться.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-078",
+      "text": "Хорошая идея может напомнить, что хорошие перемены приходят не только по плану.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-065",
+      "text": "Если один вариант требует постоянно себя уговаривать, сократи выбор до одного конкретного следующего действия.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-015",
+      "text": "Разговор, от которого ты ничего не ждёшь, откроет более простой взгляд на ситуацию.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-054",
+      "text": "Один старый сценарий станет началом более удобного порядка.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mysterious-003",
+      "text": "Вопрос от незнакомого человека может натолкнуть на полезную мысль.",
+      "category": "mysterious",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-088",
+      "text": "Хорошее совпадение напомнит, что усилия не пропали зря.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-051",
+      "text": "Небольшой жест может оказаться значимее долгих объяснений.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mysterious-034",
+      "text": "Необычный порядок событий напомнит о старой идее с новым смыслом.",
+      "category": "mysterious",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-050",
+      "text": "Если ответ кажется очевидным только на эмоциях, проверь, где больше ясности и меньше оправданий.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-073",
+      "text": "То, во что ты уже вложил силы, поможет выдохнуть и посмотреть вперёд спокойнее.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-013",
+      "text": "Спокойная честность прояснит то, что раньше приходилось додумывать.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-047",
+      "text": "Короткое уточнение вернёт ощущение контроля над задачами.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-caution-012",
+      "text": "Сегодня лучше не спорить ради победы — это поможет не создавать себе лишнюю срочность.",
+      "category": "caution",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-love-023",
+      "text": "Небольшая дистанция может убрать лишнее напряжение.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-117",
+      "text": "Старое сомнение поможет заметить то, что раньше было незаметно.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-006",
+      "text": "Знакомый ритм вскоре потребует небольшого обновления.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-work-048",
+      "text": "Не бойся сделать рабочую версию раньше идеальной.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-055",
+      "text": "Один незакрытый вопрос может дать больше прогресса, чем попытка охватить всё.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-029",
+      "text": "Когда вопрос давно не даёт покоя, проверь, где больше ясности и меньше оправданий.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-067",
+      "text": "То, что ты давно откладывал, вскоре будет восприниматься совсем иначе.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-love-025",
+      "text": "Новый интерес может убрать лишнее напряжение.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-caution-021",
+      "text": "Не перегружай день необязательными обещаниями — пауза даст более точную картину.",
+      "category": "caution",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-074",
+      "text": "Когда решение зависит от чужого мнения, сначала убери то, что точно не подходит.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-040",
+      "text": "Когда решение зависит от чужого мнения, выбери критерий, который будет важен и через неделю.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-009",
+      "text": "Один искренний вопрос прояснит то, что раньше приходилось додумывать.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-031",
+      "text": "Сейчас полезнее наблюдать, чем ускорять события. Картина окажется проще, чем кажется.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-041",
+      "text": "Знакомый ритм может постепенно остаться в прошлом.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mood-006",
+      "text": "Ощущение спешки станет понятнее после отдыха от вопроса.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-028",
+      "text": "Когда в голове слишком много аргументов, дай себе время увидеть слабое место каждого варианта.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-069",
+      "text": "Небольшая пауза в привычном ритме откроет более простой взгляд на ситуацию.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mysterious-005",
+      "text": "Непривычная тишина поможет заметить скрытую связь между событиями.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-love-028",
+      "text": "Привычное общение даст шанс услышать друг друга спокойнее.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-general-063",
+      "text": "Чужая фраза, услышанная мимоходом, поможет увидеть ситуацию с другой стороны.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-007",
+      "text": "Когда хочется выбрать самый быстрый вариант, выбери критерий, который будет важен и через неделю.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-017",
+      "text": "Небольшая идея поможет убрать лишнюю работу.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-decision-011",
+      "text": "Если выбор кажется равным, выбери критерий, который будет важен и через неделю.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-026",
+      "text": "Если выбор строится только на страхе упустить шанс, дай себе время увидеть слабое место каждого варианта.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-008",
+      "text": "Незаметная часть проекта поможет завершить то, что слишком долго висело.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-change-013",
+      "text": "Небольшая часть повседневности может привести к полезному освобождению.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-058",
+      "text": "Когда в голове слишком много аргументов, попробуй представить, что советуешь это другому человеку.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-033",
+      "text": "Сомнение в собственном темпе может смениться после простого приятного действия.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-023",
+      "text": "Небольшая часть повседневности может неожиданно получить новое продолжение.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mood-050",
+      "text": "Неспокойное ожидание не обязательно определяет весь день.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-044",
+      "text": "Разговор, от которого ты ничего не ждёшь, подтвердит то, что ты уже чувствуешь.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-070",
+      "text": "Доверься фактам, которые проявятся сами. Ясность придёт постепенно.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-love-033",
+      "text": "Один искренний вопрос даст шанс услышать друг друга спокойнее.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-016",
+      "text": "Один знак внимания поможет увидеть намерение без догадок.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-mood-014",
+      "text": "Неспокойное ожидание может ослабнуть после короткой паузы.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-067",
+      "text": "Небольшой повод улыбнуться напомнит, что усилия не пропали зря.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-love-005",
+      "text": "Спокойная честность может вернуть ощущение взаимности.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-057",
+      "text": "Если один путь выглядит слишком сложным, сделай сначала самый обратимый шаг.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-111",
+      "text": "Разговор, от которого ты ничего не ждёшь, подскажет, куда смотреть дальше.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-026",
+      "text": "Небольшой повод улыбнуться может напомнить, что хорошие перемены приходят не только по плану.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-054",
+      "text": "Спокойное облегчение сделает день заметно легче.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-058",
+      "text": "Не требуй от чувств мгновенной определённости.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mood-026",
+      "text": "Сомнение в собственном темпе станет легче, если убрать один лишний источник внимания.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-016",
+      "text": "То, что долго оставалось неизменным, может начать меняться мягче, чем ты представлял.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-049",
+      "text": "Незаметный прогресс сделает день заметно легче.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-work-011",
+      "text": "То, что давно лежит в списке, поможет завершить то, что слишком долго висело.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-102",
+      "text": "То, что ты считаешь мелочью, поможет заметить то, что раньше было незаметно.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-change-034",
+      "text": "Ситуация, которая казалась застывшей, может начать меняться мягче, чем ты представлял.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-030",
+      "text": "Слова, которые долго не звучали может оказаться значимее долгих объяснений.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-119",
+      "text": "Небольшая деталь, которую легко пропустить поможет увидеть ситуацию с другой стороны.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-caution-002",
+      "text": "Один лишний вопрос сейчас будет полезен — пауза даст более точную картину.",
+      "category": "caution",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-015",
+      "text": "Спокойная честность может стать началом нового уровня доверия.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-change-005",
+      "text": "То, к чему ты уже привык, может освободить место для более удобного варианта.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mood-015",
+      "text": "Неспокойное ожидание может оказаться временным, а не важным сигналом.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-change-030",
+      "text": "Один затянувшийся этап может открыть более простой путь.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-036",
+      "text": "Небольшая дистанция может оказаться значимее долгих объяснений.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-positive-014",
+      "text": "Незаметный прогресс поможет увидеть собственный прогресс.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-016",
+      "text": "Спокойная последовательность действий поможет освободить внимание для главного.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-034",
+      "text": "Прислушайся к первой спокойной мысли. Неопределённость станет меньше.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-079",
+      "text": "Знакомая ситуация скоро приобретёт более ясный смысл.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-045",
+      "text": "Один старый сценарий может постепенно остаться в прошлом.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-051",
+      "text": "Тёплая новость может напомнить, что хорошие перемены приходят не только по плану.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-positive-062",
+      "text": "Чья-то искренняя поддержка может появиться раньше, чем ты ждёшь.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-016",
+      "text": "Ощущение спешки станет тише, если перестать спорить с ним.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-053",
+      "text": "Если выбор строится только на страхе упустить шанс, сделай сначала самый обратимый шаг.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-042",
+      "text": "То, что можно изменить позже, не требует идеальной уверенности.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-015",
+      "text": "То, во что ты уже вложил силы, окажется очень кстати.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-decision-056",
+      "text": "Когда решение можно отложить без последствий, сократи выбор до одного конкретного следующего действия.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-020",
+      "text": "Один искренний вопрос может стать началом нового уровня доверия.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-decision-061",
+      "text": "Если оба пути ведут вперёд, решение станет проще после одного уточняющего факта.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-071",
+      "text": "Доверься фактам, которые проявятся сами. Одна деталь изменит общий смысл.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-023",
+      "text": "Простой черновик вернёт ощущение контроля над задачами.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mysterious-045",
+      "text": "Фраза, услышанная дважды, подскажет направление не прямо, а через ассоциацию.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-work-028",
+      "text": "Один хорошо выбранный приоритет поможет увидеть более короткий путь.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-020",
+      "text": "Незаметный прогресс может приятно завершить затянувшийся вопрос.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-056",
+      "text": "Не держись за форму только потому, что она знакома.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-013",
+      "text": "Оставь немного места для неожиданности. Одна деталь изменит общий смысл.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mysterious-040",
+      "text": "Иногда красивое совпадение ценно само по себе.",
+      "category": "mysterious",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-general-075",
+      "text": "То, что сейчас кажется случайностью, свяжет между собой несколько разрозненных вещей.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-039",
+      "text": "Старое ожидание перестанет быть единственно возможным.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-041",
+      "text": "Не торопи ответ. Одна деталь изменит общий смысл.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-020",
+      "text": "Один затянувшийся этап может измениться благодаря одной маленькой детали.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mysterious-002",
+      "text": "Сон или образ может связать настоящее с забытым вопросом.",
+      "category": "mysterious",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-caution-022",
+      "text": "Один осторожный шаг сегодня разумнее резкого разворота — это снизит шанс возвращаться к вопросу второй раз.",
+      "category": "caution",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-061",
+      "text": "Маленькая победа может принести лёгкое чувство удачи.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-work-036",
+      "text": "Незаметная часть проекта поможет освободить внимание для главного.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-049",
+      "text": "Старое сомнение поможет увидеть ситуацию с другой стороны.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-004",
+      "text": "То, что долго двигалось медленно, может неожиданно улучшить настроение.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-018",
+      "text": "Твоя настойчивость может наконец дать приятный отклик. Рядом окажется больше поддержки, чем кажется.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-071",
+      "text": "Если один вариант требует постоянно себя уговаривать, не ищи идеальный вариант, ищи достаточно хороший.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-love-001",
+      "text": "Спокойные границы не мешают близости.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-003",
+      "text": "Мысль, к которой ты возвращаешься, может оказаться маленьким поворотным знаком.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-038",
+      "text": "Решение можно проверить маленьким действием.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-008",
+      "text": "Старое сомнение напомнит о том, что действительно важно.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-107",
+      "text": "То, что долго оставалось на фоне, может привести к полезному совпадению.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-037",
+      "text": "Чья-то забота может оказаться значимее долгих объяснений.",
+      "category": "love",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-040",
+      "text": "Короткое уточнение может открыть удачную последовательность действий.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-015",
+      "text": "Одна рабочая задача может заметно ускорить следующий этап.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-047",
+      "text": "Ощущение, что день идёт не так, может раствориться быстрее, чем кажется.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mysterious-032",
+      "text": "Неожиданное имя может неожиданно совпасть с твоей текущей мыслью.",
+      "category": "mysterious",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-work-007",
+      "text": "Совместная работа сделает результат заметнее.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-024",
+      "text": "Простой черновик даст ясность там, где сейчас много шума.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-091",
+      "text": "То, что пока не вызывает эмоций, поможет заметить то, что раньше было незаметно.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-066",
+      "text": "Приятный ответ сделает день заметно легче.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-044",
+      "text": "Когда в голове слишком много аргументов, обрати внимание на тот, после которого становится спокойнее.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-021",
+      "text": "Вопрос, который кажется слишком простым, может стать началом новой мысли.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-caution-015",
+      "text": "Один лишний вопрос сейчас будет полезен — так будет легче сохранить хороший тон.",
+      "category": "caution",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-030",
+      "text": "Один незакрытый вопрос поможет освободить внимание для главного.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mysterious-001",
+      "text": "Вопрос от незнакомого человека может открыть любопытную цепочку мыслей.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-decision-036",
+      "text": "Если сомнение возвращается снова, отдели собственное желание от чужих ожиданий.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-104",
+      "text": "Один короткий момент напомнит о том, что действительно важно.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-076",
+      "text": "Не каждый вопрос требует ответа сегодня. Ты заметишь то, что раньше проходило мимо.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-056",
+      "text": "Незаметный выбор поможет заметить то, что раньше было незаметно.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mysterious-039",
+      "text": "Необычный порядок событий поможет заметить скрытую связь между событиями.",
+      "category": "mysterious",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-030",
+      "text": "Незаметный выбор подтолкнёт к спокойному решению.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-caution-024",
+      "text": "Не принимай чужую спешку за свою — это снизит шанс возвращаться к вопросу второй раз.",
+      "category": "caution",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-caution-014",
+      "text": "Не принимай чужую спешку за свою — это поможет не тратить силы на лишнее.",
+      "category": "caution",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-caution-020",
+      "text": "Не перегружай день необязательными обещаниями — это поможет не создавать себе лишнюю срочность.",
+      "category": "caution",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-034",
+      "text": "Маленькая победа сделает привычный день немного особенным.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-040",
+      "text": "Потребность сравнивать себя с другими может оказаться временным, а не важным сигналом.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-love-048",
+      "text": "Чья-то забота напомнит, что тепло часто проявляется в мелочах.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-mood-019",
+      "text": "Потребность всё контролировать станет тише, если перестать спорить с ним.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-023",
+      "text": "Удачный момент поможет выдохнуть и посмотреть вперёд спокойнее.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-mood-030",
+      "text": "Усталость от мыслей может раствориться быстрее, чем кажется.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-026",
+      "text": "Один затянувшийся этап может начать меняться мягче, чем ты представлял.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-059",
+      "text": "Не пропусти возможность порадоваться простому. Нужный человек может откликнуться.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-mood-035",
+      "text": "Небольшая потеря мотивации может оказаться временным, а не важным сигналом.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-change-004",
+      "text": "Привычный способ действовать может привести к полезному освобождению.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-034",
+      "text": "Усталость от мыслей может оказаться временным, а не важным сигналом.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-018",
+      "text": "Гибкость сегодня окажется полезнее жёсткого плана.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-074",
+      "text": "То, что ты считаешь мелочью, подтвердит то, что ты уже чувствуешь.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-love-043",
+      "text": "Оставь место не только словам, но и поступкам.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-035",
+      "text": "Одна рабочая задача поможет освободить внимание для главного.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mysterious-022",
+      "text": "Странное совпадение может оказаться просто красивой случайностью — и всё же запомнится.",
+      "category": "mysterious",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-046",
+      "text": "Приятное изменение планов напомнит, что усилия не пропали зря.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-069",
+      "text": "Старое ожидание попросит гибкости, а не резкого разворота.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-014",
+      "text": "Когда в голове слишком много аргументов, отдели собственное желание от чужих ожиданий.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-022",
+      "text": "Чья-то забота может неожиданно вернуть лёгкость.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-caution-006",
+      "text": "Один лишний вопрос сейчас будет полезен — это снизит шанс возвращаться к вопросу второй раз.",
+      "category": "caution",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-love-064",
+      "text": "Тёплый разговор может оказаться значимее долгих объяснений.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-general-081",
+      "text": "Ответ, который пока не складывается, скоро приобретёт более ясный смысл.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-043",
+      "text": "Позволь себе принять удачный момент без подозрений. Следующий шаг даст больше удовольствия, чем ожидалось.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-change-012",
+      "text": "То, что раньше работало автоматически, может привести к полезному освобождению.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-002",
+      "text": "То, что ты давно откладывал, вскоре потребует небольшого обновления.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-112",
+      "text": "Вопрос, который кажется слишком простым, поможет отделить важное от лишнего.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-positive-052",
+      "text": "Маленькая победа может привести к приятному продолжению.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-022",
+      "text": "Не пропусти возможность порадоваться простому. Небольшая удача может прийти через обычное дело.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mysterious-033",
+      "text": "Непривычная тишина может оказаться просто красивой случайностью — и всё же запомнится.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-decision-068",
+      "text": "Когда решение можно отложить без последствий, не ищи идеальный вариант, ищи достаточно хороший.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-work-054",
+      "text": "Спокойная последовательность действий вернёт ощущение контроля над задачами.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-027",
+      "text": "Вопрос, который кажется слишком простым, может оказаться маленьким поворотным знаком.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-002",
+      "text": "Привычное общение может неожиданно вернуть лёгкость.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-019",
+      "text": "Если один вариант требует постоянно себя уговаривать, не принимай срочность за важность.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-caution-016",
+      "text": "Один осторожный шаг сегодня разумнее резкого разворота — спокойная проверка полезнее быстрой реакции.",
+      "category": "caution",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-022",
+      "text": "Небольшая деталь, которую легко пропустить может оказаться маленьким поворотным знаком.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-caution-010",
+      "text": "Если что-то звучит слишком удобно, проверь условия — это поможет не тратить силы на лишнее.",
+      "category": "caution",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mysterious-044",
+      "text": "Одна случайная цифра подскажет направление не прямо, а через ассоциацию.",
+      "category": "mysterious",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-general-010",
+      "text": "Сейчас полезнее наблюдать, чем ускорять события. Всё начнёт складываться без давления.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-025",
+      "text": "Когда вопрос давно не даёт покоя, сделай сначала самый обратимый шаг.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-009",
+      "text": "Если один путь выглядит слишком сложным, проверь, какой вариант оставляет тебе больше свободы.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-069",
+      "text": "Если ответ кажется очевидным только на эмоциях, посмотри, какой путь требует меньше внутреннего сопротивления.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-050",
+      "text": "Один знак внимания может убрать лишнее напряжение.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-029",
+      "text": "Небольшая приятная неожиданность может напомнить, что хорошие перемены приходят не только по плану.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-change-024",
+      "text": "Привычный способ действовать может неожиданно получить новое продолжение.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-063",
+      "text": "Если сомнение возвращается снова, проверь, какой вариант оставляет тебе больше свободы.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-016",
+      "text": "Если выбор кажется равным, проверь, какой вариант оставляет тебе больше свободы.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-073",
+      "text": "Ответ, который пока не складывается, подскажет, куда смотреть дальше.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-062",
+      "text": "То, что сегодня идёт не по плану, может привести к полезному совпадению.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-062",
+      "text": "Если ты уже несколько раз менял решение, выбери критерий, который будет важен и через неделю.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-042",
+      "text": "Старое ожидание может начать меняться мягче, чем ты представлял.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-009",
+      "text": "Мысль, к которой ты возвращаешься, станет понятнее, если не торопить события.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-010",
+      "text": "Когда хочется получить ещё одно подтверждение, решение станет проще после одного уточняющего факта.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-008",
+      "text": "Когда решение можно отложить без последствий, проверь, какой вариант оставляет тебе больше свободы.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-008",
+      "text": "Мягкая пауза в разговоре может убрать лишнее напряжение.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-decision-060",
+      "text": "Если выбор строится только на страхе упустить шанс, сначала убери то, что точно не подходит.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-decision-039",
+      "text": "Если хочется решить всё немедленно, отдели собственное желание от чужих ожиданий.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mood-012",
+      "text": "Сейчас полезно уменьшить количество входящего шума.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-change-062",
+      "text": "Небольшая часть повседневности начнёт двигаться после долгой паузы.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mysterious-024",
+      "text": "Сегодня интереснее наблюдать за повторениями, чем за громкими событиями.",
+      "category": "mysterious",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-mood-038",
+      "text": "Слишком много впечатлений не требует немедленного исправления.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-046",
+      "text": "Небольшой жест даст шанс услышать друг друга спокойнее.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mood-039",
+      "text": "Неспокойное ожидание станет легче, если убрать один лишний источник внимания.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-decision-030",
+      "text": "Если выбор строится только на страхе упустить шанс, обрати внимание на тот, после которого становится спокойнее.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-028",
+      "text": "То, к чему ты уже привык, попросит гибкости, а не резкого разворота.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-021",
+      "text": "Один старый сценарий начнёт двигаться после долгой паузы.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-106",
+      "text": "Небольшая пауза в привычном ритме подскажет, куда смотреть дальше.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-020",
+      "text": "Чужая обратная связь поможет освободить внимание для главного.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-075",
+      "text": "Если сомнение возвращается снова, сравни не обещания, а реальные последствия.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-053",
+      "text": "Простой черновик поможет увидеть более короткий путь.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mysterious-021",
+      "text": "Повторяющееся слово может связать настоящее с забытым вопросом.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mood-009",
+      "text": "Внутренняя суета станет тише, если перестать спорить с ним.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-046",
+      "text": "Новый способ сделать привычную задачу вернёт ощущение контроля над задачами.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-work-018",
+      "text": "То, что давно лежит в списке, даст ясность там, где сейчас много шума.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-070",
+      "text": "Если ты уже несколько раз менял решение, не ищи идеальный вариант, ищи достаточно хороший.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-081",
+      "text": "Не обесценивай маленький успех. День может закончиться приятнее, чем начался.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-decision-023",
+      "text": "Если один путь выглядит слишком сложным, не ищи идеальный вариант, ищи достаточно хороший.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-061",
+      "text": "Обычный день подскажет, куда смотреть дальше.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-work-043",
+      "text": "Простой черновик может заметно ускорить следующий этап.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-039",
+      "text": "Чувство, которое трудно назвать, прояснит то, что раньше приходилось додумывать.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-033",
+      "text": "Хорошее совпадение подтвердит, что выбранное направление работает.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-050",
+      "text": "Доверься фактам, которые проявятся сами. Ты заметишь то, что раньше проходило мимо.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-087",
+      "text": "Один короткий момент свяжет между собой несколько разрозненных вещей.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-027",
+      "text": "Один старый сценарий может освободить место для более удобного варианта.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-decision-034",
+      "text": "Если хочется решить всё немедленно, сравни не обещания, а реальные последствия.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-043",
+      "text": "Небольшая часть повседневности может открыть более простой путь.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-work-026",
+      "text": "Незаметная часть проекта может убрать лишнюю неопределённость.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mysterious-026",
+      "text": "Сон или образ станет необычным акцентом этого дня.",
+      "category": "mysterious",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-047",
+      "text": "Не торопи ответ. Ты увидишь, где был лишний поворот.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-014",
+      "text": "Событие, к которому ты не готовился, вскоре перестанет казаться таким запутанным.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-change-007",
+      "text": "Старое ожидание вскоре потребует небольшого обновления.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mood-020",
+      "text": "Ощущение спешки не обязательно определяет весь день.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-057",
+      "text": "То, что пока не вызывает эмоций, подскажет, куда смотреть дальше.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-decision-004",
+      "text": "Если оба пути ведут вперёд, обрати внимание на тот, после которого становится спокойнее.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-064",
+      "text": "То, что долго оставалось на фоне, может оказаться маленьким поворотным знаком.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mysterious-030",
+      "text": "Непривычная тишина может связать настоящее с забытым вопросом.",
+      "category": "mysterious",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-046",
+      "text": "То, что сейчас кажется случайностью, станет понятнее, если не торопить события.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mood-049",
+      "text": "Не каждый спад настроения требует большого решения.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-caution-017",
+      "text": "Оставь запас времени там, где всё зависит не только от тебя — так будет легче сохранить хороший тон.",
+      "category": "caution",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-022",
+      "text": "Ощущение, что день идёт не так, станет понятнее после отдыха от вопроса.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-002",
+      "text": "Один короткий момент скоро приобретёт более ясный смысл.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-072",
+      "text": "Когда хочется выбрать самый быстрый вариант, проверь, где больше ясности и меньше оправданий.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-caution-007",
+      "text": "Сначала уточни, потом реагируй — это поможет не тратить силы на лишнее.",
+      "category": "caution",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-017",
+      "text": "Маленькая победа может приятно завершить затянувшийся вопрос.",
+      "category": "positive",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-043",
+      "text": "Момент тишины может стать началом новой мысли.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-082",
+      "text": "Мысль, к которой ты возвращаешься, даст повод немного изменить привычный ритм.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-021",
+      "text": "Если оба пути ведут вперёд, не спеши закрывать вопрос сегодня.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mood-036",
+      "text": "Неспокойное ожидание станет тише, если перестать спорить с ним.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-073",
+      "text": "Когда оба варианта выглядят убедительно, попробуй представить, что советуешь это другому человеку.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mysterious-006",
+      "text": "Место, о котором ты давно не вспоминал, поможет заметить скрытую связь между событиями.",
+      "category": "mysterious",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mood-048",
+      "text": "Ощущение спешки может смениться после простого приятного действия.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-092",
+      "text": "Ответ, который пока не складывается, напомнит, что не всё требует немедленного ответа.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mysterious-004",
+      "text": "Одна случайная цифра может натолкнуть на полезную мысль.",
+      "category": "mysterious",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-general-023",
+      "text": "Оставь место для второго взгляда. Неопределённость станет меньше.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-040",
+      "text": "Удачный момент может открыть ещё одну хорошую возможность.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-056",
+      "text": "Старая симпатия покажет ценность простого присутствия.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-change-057",
+      "text": "Один затянувшийся этап попросит гибкости, а не резкого разворота.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-059",
+      "text": "Один старый сценарий вскоре будет восприниматься совсем иначе.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-decision-024",
+      "text": "Когда хочется выбрать самый быстрый вариант, проверь, какой вариант оставляет тебе больше свободы.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mood-008",
+      "text": "Потребность сравнивать себя с другими станет тише, если перестать спорить с ним.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mysterious-041",
+      "text": "Неожиданное имя окажется интереснее, чем кажется сначала.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-118",
+      "text": "Ответ, который пока не складывается, может привести к полезному совпадению.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-108",
+      "text": "Доверься фактам, которые проявятся сами. Ты увидишь, где был лишний поворот.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-positive-048",
+      "text": "Хорошее совпадение поможет выдохнуть и посмотреть вперёд спокойнее.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-work-042",
+      "text": "Совместная работа поможет увидеть более короткий путь.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-035",
+      "text": "Старая симпатия поможет увидеть намерение без догадок.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-002",
+      "text": "Разговор по делу может открыть удачную последовательность действий.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-002",
+      "text": "Хорошее совпадение может напомнить, что хорошие перемены приходят не только по плану.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-caution-004",
+      "text": "Оставь запас времени там, где всё зависит не только от тебя — пауза даст более точную картину.",
+      "category": "caution",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-099",
+      "text": "Событие, к которому ты не готовился, может оказаться маленьким поворотным знаком.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-007",
+      "text": "Тяжёлое послевкусие разговора не обязательно определяет весь день.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-change-066",
+      "text": "То, что ты давно откладывал, начнёт двигаться после долгой паузы.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-042",
+      "text": "Сейчас важнее направление, чем скорость. Появится более спокойное объяснение.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mood-027",
+      "text": "Усталость от мыслей не требует немедленного исправления.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-042",
+      "text": "Мягкая пауза в разговоре покажет ценность простого присутствия.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-037",
+      "text": "Один спокойный шаг будет полезнее трёх поспешных. Ты увидишь, где был лишний поворот.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-022",
+      "text": "То, что ты давно откладывал, может открыть более простой путь.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mysterious-029",
+      "text": "Случайный символ окажется интереснее, чем кажется сначала.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-decision-012",
+      "text": "Если сомнение возвращается снова, не ищи идеальный вариант, ищи достаточно хороший.",
+      "category": "decision",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mood-023",
+      "text": "Ощущение спешки может раствориться быстрее, чем кажется.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-110",
+      "text": "Тихая перемена в привычном порядке может оказаться важнее, чем выглядит.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-027",
+      "text": "Чуть больше открытости сегодня сыграет в твою пользу. Спокойная уверенность сегодня будет сильнее суеты.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-caution-011",
+      "text": "Не обещай больше, чем хочется выполнять — так ты избежишь ненужной путаницы.",
+      "category": "caution",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-016",
+      "text": "Сейчас полезнее наблюдать, чем ускорять события. Ты заметишь то, что раньше проходило мимо.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-change-017",
+      "text": "То, к чему ты уже привык, может измениться благодаря одной маленькой детали.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-026",
+      "text": "Сейчас полезнее наблюдать, чем ускорять события. Нужная деталь скоро проявится.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-caution-023",
+      "text": "Сегодня лучше не спорить ради победы — так будет проще отличить реальную проблему от предположения.",
+      "category": "caution",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-017",
+      "text": "Привычный маршрут или порядок действий может оказаться важнее, чем выглядит.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-work-032",
+      "text": "Небольшая подготовка вернёт ощущение контроля над задачами.",
+      "category": "work",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-001",
+      "text": "Новый способ сделать привычную задачу принесёт больше пользы при спокойном темпе.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-work-009",
+      "text": "Спокойная последовательность действий может неожиданно дать хороший результат.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-051",
+      "text": "Незаметный выбор даст повод немного изменить привычный ритм.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-080",
+      "text": "Обычный день может оказаться важнее, чем выглядит.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-decision-043",
+      "text": "Сейчас полезнее проверить, чем предполагать.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-070",
+      "text": "Заслуженное внимание сделает день заметно легче.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-caution-019",
+      "text": "Если что-то звучит слишком удобно, проверь условия — пауза даст более точную картину.",
+      "category": "caution",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mood-031",
+      "text": "Небольшое раздражение не обязательно определяет весь день.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-decision-017",
+      "text": "Если сомнение возвращается снова, сначала убери то, что точно не подходит.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-039",
+      "text": "Тёплая новость окажется очень кстати.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-mysterious-042",
+      "text": "Старый предмет поможет заметить скрытую связь между событиями.",
+      "category": "mysterious",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-positive-058",
+      "text": "Маленькая победа станет хорошим знаком для следующего шага.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-005",
+      "text": "Спокойная последовательность действий может заметно ускорить следующий этап.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-love-006",
+      "text": "Чьё-то внимание станет понятнее, если не торопить выводы.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-011",
+      "text": "То, что сегодня идёт не по плану, даст нужную подсказку без лишнего шума.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-028",
+      "text": "Случайная встреча или сообщение станет яснее ближе к концу дня.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-decision-002",
+      "text": "Когда вопрос давно не даёт покоя, не ищи идеальный вариант, ищи достаточно хороший.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-029",
+      "text": "Старое ожидание может освободить место для более удобного варианта.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-010",
+      "text": "Знакомый ритм может освободить место для более удобного варианта.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-047",
+      "text": "Не пропусти возможность порадоваться простому. Маленький шанс окажется вполне реальным.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-mysterious-014",
+      "text": "Место, о котором ты давно не вспоминал, может натолкнуть на полезную мысль.",
+      "category": "mysterious",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-024",
+      "text": "Одна неприметная возможность скоро приобретёт более ясный смысл.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-018",
+      "text": "То, что долго оставалось на фоне, поможет заметить то, что раньше было незаметно.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-035",
+      "text": "Чужая уверенность не обязана становиться твоей.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mood-004",
+      "text": "Внутренняя суета может отступить, когда появится немного пространства.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-058",
+      "text": "Одна рабочая задача вернёт ощущение контроля над задачами.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-caution-008",
+      "text": "Не принимай чужую спешку за свою — так будет проще отличить реальную проблему от предположения.",
+      "category": "caution",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-009",
+      "text": "Знакомый ритм может измениться благодаря одной маленькой детали.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-035",
+      "text": "Пусть решение немного отлежится. Картина окажется проще, чем кажется.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-003",
+      "text": "Потребность всё контролировать может смениться после простого приятного действия.",
+      "category": "mood",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-mood-028",
+      "text": "Потребность сравнивать себя с другими может смениться после простого приятного действия.",
+      "category": "mood",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-work-022",
+      "text": "Новый способ сделать привычную задачу может стать полезнее большого, но расплывчатого плана.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-060",
+      "text": "Сегодня не всё нужно объяснять сразу. Нужный момент будет легко узнать.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mood-042",
+      "text": "Желание немедленно получить ответ не обязательно означает, что вся ситуация такова.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-040",
+      "text": "Одна неприметная возможность подскажет, куда смотреть дальше.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-095",
+      "text": "Сейчас важнее направление, чем скорость. Правильный вопрос окажется важнее готового ответа.",
+      "category": "general",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-general-084",
+      "text": "То, что ты считаешь мелочью, свяжет между собой несколько разрозненных вещей.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-caution-018",
+      "text": "Не делай вывод по одному сообщению — пауза даст более точную картину.",
+      "category": "caution",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-020",
+      "text": "Не отбрасывай маленькие совпадения. Ты заметишь то, что раньше проходило мимо.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-012",
+      "text": "Ответ, который пока не складывается, откроет более простой взгляд на ситуацию.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-change-052",
+      "text": "То, что долго оставалось неизменным, может неожиданно получить новое продолжение.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-change-033",
+      "text": "То, что ты давно откладывал, может постепенно остаться в прошлом.",
+      "category": "change",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-101",
+      "text": "Обычный день вскоре перестанет казаться таким запутанным.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-031",
+      "text": "Неожиданное сообщение может убрать лишнее напряжение.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-022",
+      "text": "Если ответ кажется очевидным только на эмоциях, дай себе время увидеть слабое место каждого варианта.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-028",
+      "text": "Сегодня полезно сказать «да» чему-то лёгкому и доброму. Следующий шаг даст больше удовольствия, чем ожидалось.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mysterious-037",
+      "text": "Старый предмет станет маленьким поводом посмотреть внимательнее.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-general-072",
+      "text": "Смотри не на громкие знаки, а на повторяющиеся детали. Правильный вопрос окажется важнее готового ответа.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mysterious-036",
+      "text": "Случайный символ поможет заметить скрытую связь между событиями.",
+      "category": "mysterious",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-positive-074",
+      "text": "Одна полезная встреча сделает день заметно легче.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-045",
+      "text": "Усталость от мыслей не обязательно говорит о том, что ты идёшь не туда.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-041",
+      "text": "Если оба пути ведут вперёд, не ищи идеальный вариант, ищи достаточно хороший.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-070",
+      "text": "Небольшая часть повседневности станет началом более удобного порядка.",
+      "category": "change",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-087",
+      "text": "Заслуженное внимание поможет выдохнуть и посмотреть вперёд спокойнее.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-general-054",
+      "text": "Старое сомнение даст повод немного изменить привычный ритм.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-mysterious-025",
+      "text": "Старый предмет станет необычным акцентом этого дня.",
+      "category": "mysterious",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-positive-011",
+      "text": "Маленькая победа может открыть ещё одну хорошую возможность.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-mood-037",
+      "text": "Усталость от мыслей станет тише, если перестать спорить с ним.",
+      "category": "mood",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-love-024",
+      "text": "Неожиданное сообщение прояснит то, что раньше приходилось додумывать.",
+      "category": "love",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-work-033",
+      "text": "Задача, которую хочется отложить, может заметно ускорить следующий этап.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-096",
+      "text": "Не отбрасывай маленькие совпадения. Ответ может появиться в неожиданной форме.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-positive-042",
+      "text": "То, во что ты уже вложил силы, может привести к приятному продолжению.",
+      "category": "positive",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-positive-060",
+      "text": "Маленькая победа может напомнить, что хорошие перемены приходят не только по плану.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-work-049",
+      "text": "Совместная работа может стать полезнее большого, но расплывчатого плана.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-positive-031",
+      "text": "Хорошая идея может неожиданно улучшить настроение.",
+      "category": "positive",
+      "tone": "playful"
+    },
+    {
+      "id": "cb-general-090",
+      "text": "Не отбрасывай маленькие совпадения. Следующий шаг станет очевиднее.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-change-036",
+      "text": "Один затянувшийся этап может освободить место для более удобного варианта.",
+      "category": "change",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-work-003",
+      "text": "Один незакрытый вопрос может стать полезнее большого, но расплывчатого плана.",
+      "category": "work",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-decision-018",
+      "text": "Если один путь выглядит слишком сложным, обрати внимание на тот, после которого становится спокойнее.",
+      "category": "decision",
+      "tone": "reassuring"
+    },
+    {
+      "id": "cb-mood-002",
+      "text": "Внутренний шум станет тише, если перестать спорить с ним.",
+      "category": "mood",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-086",
+      "text": "Небольшая деталь, которую легко пропустить покажет, что ты уже ближе к ответу.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-015",
+      "text": "Если выбор кажется равным, не ищи идеальный вариант, ищи достаточно хороший.",
+      "category": "decision",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-005",
+      "text": "Мысль, к которой ты возвращаешься, скоро приобретёт более ясный смысл.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-032",
+      "text": "Незаметный прогресс может неожиданно улучшить настроение.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-004",
+      "text": "Ответ, который пока не складывается, может изменить твоё отношение к происходящему.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-work-010",
+      "text": "Небольшая подготовка поможет увидеть более короткий путь.",
+      "category": "work",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-mysterious-010",
+      "text": "Повторяющийся цвет может натолкнуть на полезную мысль.",
+      "category": "mysterious",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-100",
+      "text": "Мысль, к которой ты возвращаешься, может оказаться важнее, чем выглядит.",
+      "category": "general",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-work-057",
+      "text": "Один незакрытый вопрос вернёт ощущение контроля над задачами.",
+      "category": "work",
+      "tone": "encouraging"
+    },
+    {
+      "id": "cb-general-078",
+      "text": "Ответ, пришедший не напрямую, вскоре перестанет казаться таким запутанным.",
+      "category": "general",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-decision-037",
+      "text": "Когда оба варианта выглядят убедительно, обрати внимание на тот, после которого становится спокойнее.",
+      "category": "decision",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-045",
+      "text": "Не пытайся собрать всю картину за один раз. Всё начнёт складываться без давления.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-caution-013",
+      "text": "Если что-то звучит слишком удобно, проверь условия — это поможет не создавать себе лишнюю срочность.",
+      "category": "caution",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-038",
+      "text": "Тёплый разговор поможет почувствовать больше близости.",
+      "category": "love",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-059",
+      "text": "Совместный простой момент покажет ценность простого присутствия.",
+      "category": "love",
+      "tone": "ambiguous"
+    },
+    {
+      "id": "cb-general-105",
+      "text": "Оставь место для второго взгляда. Ответ может появиться в неожиданной форме.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-positive-064",
+      "text": "Небольшой повод улыбнуться окажется очень кстати.",
+      "category": "positive",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-change-047",
+      "text": "То, к чему ты уже привык, перестанет быть единственно возможным.",
+      "category": "change",
+      "tone": "mysterious"
+    },
+    {
+      "id": "cb-mysterious-015",
+      "text": "Старый предмет может оказаться просто красивой случайностью — и всё же запомнится.",
+      "category": "mysterious",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-general-053",
+      "text": "Не пытайся собрать всю картину за один раз. Правильный вопрос окажется важнее готового ответа.",
+      "category": "general",
+      "tone": "reflective"
+    },
+    {
+      "id": "cb-love-003",
+      "text": "Небольшой жест поможет почувствовать больше близости.",
+      "category": "love",
+      "tone": "ambiguous"
+    }
+  ]
+}

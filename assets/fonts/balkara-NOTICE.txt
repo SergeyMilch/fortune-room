@@ -1,0 +1,16 @@
+Balkara Free Condensed
+Designers: Svetlin Balezdrov and Ventsislav Yordanov
+Copyright: Copyright (c) 2016, Svetlin Balezdrov & Ventsislav Yordanov
+
+Requested source:
+https://fonts-online.ru/fonts/balkara
+
+Local font package and license verification:
+https://justfreefonts.com/fonts/balkara/
+
+License:
+SIL Open Font License 1.1
+See balkara-OFL.txt in this directory for the full license text.
+
+The font file is distributed unchanged in Fortune Room and is loaded from
+the local application bundle. No runtime web font request is used.

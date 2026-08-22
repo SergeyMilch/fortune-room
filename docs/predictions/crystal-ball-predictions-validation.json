@@ -1,0 +1,27 @@
+{
+  "total": 600,
+  "categoryCounts": {
+    "work": 60,
+    "change": 70,
+    "mysterious": 45,
+    "decision": 75,
+    "general": 120,
+    "mood": 50,
+    "positive": 90,
+    "love": 65,
+    "caution": 25
+  },
+  "toneCounts": {
+    "encouraging": 86,
+    "reflective": 153,
+    "playful": 49,
+    "ambiguous": 111,
+    "reassuring": 142,
+    "mysterious": 59
+  },
+  "exactNormalizedDuplicates": 0,
+  "minChars": 35,
+  "maxChars": 112,
+  "avgChars": 71.3,
+  "medianChars": 71.0
+}

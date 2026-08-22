@@ -1,0 +1,18 @@
+Sjz font
+
+Designer: Denis Kukushkin
+Copyright: Copyright 2020. DENIS KUKUSHKIN - All Rights Reserved
+
+The designer's Behance project states that Sjz may be downloaded and used
+for personal and commercial purposes and that it includes basic Latin and
+Cyrillic support:
+https://www.behance.net/gallery/91497007/Free-Font-Sjz-basic-Latin-and-Cyrillic-support
+
+The catalog page supplied for this project also lists commercial use and
+Russian-language support:
+https://fonts-online.ru/fonts/sjz
+
+Font binary source:
+https://media.uprock.school/fonts/Sjz/Sjz.otf
+
+Retrieved for Fortune Room on 2026-08-21.
