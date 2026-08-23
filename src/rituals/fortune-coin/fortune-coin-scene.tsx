@@ -10,6 +10,13 @@ import Animated, {
 
 import { FortuneCoinCandleFlame } from "./fortune-coin-candle-flame";
 import type { FortuneCoinGeometry } from "./fortune-coin-geometry";
+import {
+  COIN_EDGE_ROTATION_DEGREES,
+  COIN_FIRST_IMPACT_PROGRESS,
+  COIN_MOON_SETTLING_ANGLES,
+  COIN_SETTLING_PROGRESS,
+  COIN_SUN_SETTLING_ANGLES,
+} from "./coin-physics";
 
 const assets = {
   background: require("../../../assets/fortune-coin/runtime/coin-scene-no-flame.png"),
@@ -26,19 +33,39 @@ function getCoinAngle(
 ) {
   "worklet";
   if (motion <= 0) return 58 - charge * 16;
-  const target = targetFace >= 0.5 ? 180 : 0;
-  if (motion <= 0.47) {
+  if (motion <= COIN_FIRST_IMPACT_PROGRESS) {
     return interpolate(
       motion,
-      [0, 0.47],
-      [42, target + turns * 360],
+      [0, COIN_FIRST_IMPACT_PROGRESS],
+      [42, turns * 360 + COIN_SUN_SETTLING_ANGLES[0]],
       Extrapolation.CLAMP,
     );
   }
-  return target + interpolate(
+
+  return interpolate(
     motion,
-    [0.47, 0.56, 0.64, 0.73, 0.82, 0.9, 1],
-    [12, -8, 5, -3, 1, 0, 0],
+    COIN_SETTLING_PROGRESS,
+    targetFace >= 0.5 ? COIN_MOON_SETTLING_ANGLES : COIN_SUN_SETTLING_ANGLES,
+    Extrapolation.CLAMP,
+  );
+}
+
+function getCoinEdgeRotation(motion: number, driftX: number) {
+  "worklet";
+  if (motion <= COIN_FIRST_IMPACT_PROGRESS) {
+    return interpolate(
+      motion,
+      [0, 0.22, COIN_FIRST_IMPACT_PROGRESS],
+      [0, driftX * 0.055, 0],
+      Extrapolation.CLAMP,
+    );
+  }
+
+  const direction = driftX < 0 ? -1 : 1;
+  return direction * interpolate(
+    motion,
+    COIN_SETTLING_PROGRESS,
+    COIN_EDGE_ROTATION_DEGREES,
     Extrapolation.CLAMP,
   );
 }
@@ -73,12 +100,13 @@ export function FortuneCoinScene({
     const progress = motion.value;
     const height = throwHeight.value * geometry.scale;
     const drift = driftX.value * geometry.scale;
+    const edgeRotation = getCoinEdgeRotation(progress, driftX.value);
     return {
       transform: [
         {
           translateX: interpolate(
             progress,
-            [0, 0.24, 0.47, 1],
+            [0, 0.22, 0.4, 1],
             [0, drift * 0.52, drift, drift * 0.24],
             Extrapolation.CLAMP,
           ),
@@ -86,27 +114,27 @@ export function FortuneCoinScene({
         {
           translateY: interpolate(
             progress,
-            [0, 0.24, 0.47, 0.56, 0.64, 0.73, 0.82, 1],
-            [0, -height, 0, -44 * geometry.scale, 0, -19 * geometry.scale, 0, 0],
+            [
+              0, 0.22, 0.4, 0.422, 0.445, 0.469, 0.493, 0.519, 0.545,
+              0.572, 0.6, 0.63, 0.66, 0.69, 0.72, 0.75, 0.78, 1,
+            ],
+            [
+              0, -height, 0, -25 * geometry.scale, 0, -15 * geometry.scale, 0,
+              -9 * geometry.scale, 0, -5.5 * geometry.scale, 0, -3 * geometry.scale,
+              0, -1.7 * geometry.scale, 0, -0.9 * geometry.scale, 0, 0,
+            ],
             Extrapolation.CLAMP,
           ) - charge.value * 7 * geometry.scale,
         },
         {
           scale: interpolate(
             progress,
-            [0, 0.24, 0.47, 0.56, 0.73, 1],
-            [1, 1.28, 1, 1.06, 1.02, 1],
+            [0, 0.22, 0.4, 0.445, 0.493, 0.545, 0.6, 0.66, 0.72, 0.78, 1],
+            [1, 1.28, 1, 1.035, 1.026, 1.019, 1.014, 1.01, 1.006, 1.003, 1],
             Extrapolation.CLAMP,
           ),
         },
-        {
-          rotateZ: `${interpolate(
-            progress,
-            [0, 0.24, 0.47, 0.73, 1],
-            [0, driftX.value * 0.055, driftX.value * 0.035, -1.4, 0],
-            Extrapolation.CLAMP,
-          )}deg`,
-        },
+        { rotateZ: `${edgeRotation}deg` },
       ],
     };
   });
@@ -141,18 +169,19 @@ export function FortuneCoinScene({
   const shadowStyle = useAnimatedStyle(() => {
     const progress = motion.value;
     const drift = driftX.value * geometry.scale;
+    const edgeRotation = getCoinEdgeRotation(progress, driftX.value);
     return {
       opacity: interpolate(
         progress,
-        [0, 0.2, 0.47, 0.56, 0.64, 1],
-        [0.48, 0.08, 0.54, 0.32, 0.5, 0.46],
+        [0, 0.18, 0.4, 0.445, 0.493, 0.545, 0.6, 0.66, 0.72, 0.78, 1],
+        [0.48, 0.08, 0.58, 0.4, 0.54, 0.43, 0.51, 0.45, 0.49, 0.46, 0.46],
         Extrapolation.CLAMP,
       ),
       transform: [
         {
           translateX: interpolate(
             progress,
-            [0, 0.47, 1],
+            [0, 0.4, 1],
             [0, drift, drift * 0.24],
             Extrapolation.CLAMP,
           ),
@@ -160,11 +189,12 @@ export function FortuneCoinScene({
         {
           scale: interpolate(
             progress,
-            [0, 0.24, 0.47, 1],
-            [1, 0.58, 1.08, 1],
+            [0, 0.22, 0.4, 0.445, 0.493, 0.545, 0.6, 0.66, 0.72, 0.78, 1],
+            [1, 0.58, 1.1, 0.9, 1.06, 0.94, 1.035, 0.97, 1.018, 0.99, 1],
             Extrapolation.CLAMP,
           ),
         },
+        { rotateZ: `${edgeRotation}deg` },
       ],
     };
   });

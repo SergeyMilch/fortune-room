@@ -116,17 +116,6 @@ export function FortuneRoomHomeScreen() {
 
       <SafeAreaView pointerEvents="box-none" style={styles.safeArea}>
         <View style={styles.topBar}>
-          {__DEV__ ? (
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel="Developer Lab"
-              hitSlop={8}
-              onPress={() => router.push("/developer-lab" as Href)}
-              style={({ pressed }) => [styles.labButton, pressed && styles.settingsPressed]}
-            >
-              <Text style={styles.labButtonText}>LAB</Text>
-            </Pressable>
-          ) : null}
           <Pressable
             accessibilityRole="button"
             accessibilityLabel="Настройки"
@@ -187,22 +176,6 @@ const styles = StyleSheet.create({
     gap: 8,
     paddingTop: 6,
     paddingHorizontal: 14,
-  },
-  labButton: {
-    height: 32,
-    paddingHorizontal: 10,
-    borderRadius: 16,
-    alignItems: "center",
-    justifyContent: "center",
-    borderWidth: 1,
-    borderColor: "rgba(231,217,190,0.18)",
-    backgroundColor: "rgba(4,7,9,0.54)",
-  },
-  labButtonText: {
-    color: "rgba(239,226,202,0.68)",
-    fontSize: 8,
-    letterSpacing: 1.3,
-    fontWeight: "700",
   },
   settingsButton: {
     width: 44,

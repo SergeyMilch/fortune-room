@@ -3,20 +3,38 @@
     "name": "Fortune Room",
     "slug": "fortune-room",
     "version": "0.1.0",
+    "icon": "./assets/branding/icon.png",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
     "scheme": "fortuneroom",
     "android": {
-      "package": "com.fortuneroom.app",
+      "package": "com.pushkin85.mil.fortuneroom",
       "adaptiveIcon": {
+        "foregroundImage": "./assets/branding/icon.png",
         "backgroundColor": "#06090D"
       }
     },
     "plugins": [
       "expo-router",
       "expo-image",
-      "expo-audio",
-      "expo-sqlite"
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "enableBackgroundPlayback": false
+        }
+      ],
+      "expo-sqlite",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#06090D",
+          "image": "./assets/branding/icon.png",
+          "imageWidth": 240,
+          "resizeMode": "contain"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

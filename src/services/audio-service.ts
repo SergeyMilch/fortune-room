@@ -125,6 +125,10 @@ const preloadPromise = Promise.all(Object.values(audioSources).map((source) => p
   () => undefined,
 );
 
+export function prepareAudioAssets(): Promise<void> {
+  return preloadPromise;
+}
+
 class AudioService {
   private players: AudioPlayers | null = null;
   private activationPromise: Promise<void> | null = null;

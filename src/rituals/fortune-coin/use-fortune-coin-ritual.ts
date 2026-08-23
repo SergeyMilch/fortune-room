@@ -12,7 +12,11 @@ import { audioService } from "@/services/audio-service";
 import { hapticService } from "@/services/haptic-service";
 
 import { drawCoinOutcome, drawCoinReading, type CoinOutcome } from "./coin-content";
-import { getCoinThrowProfile, type CoinFlickInput } from "./coin-physics";
+import {
+  COIN_FIRST_IMPACT_PROGRESS,
+  getCoinThrowProfile,
+  type CoinFlickInput,
+} from "./coin-physics";
 
 export type FortuneCoinPhase =
   | "idle"
@@ -116,7 +120,9 @@ export function useFortuneCoinRitual() {
     });
     void hapticService.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
 
-    const firstImpactMs = Math.round(profile.durationMs * 0.47);
+    const firstImpactMs = Math.round(
+      profile.durationMs * COIN_FIRST_IMPACT_PROGRESS,
+    );
     schedule(() => {
       updatePhase("bouncing");
       audioService.playFortuneCoinLand();

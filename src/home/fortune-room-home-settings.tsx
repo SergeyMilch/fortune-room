@@ -1,8 +1,11 @@
+import { useEffect, useState } from "react";
 import { Modal, Pressable, StyleSheet, Switch, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Animated, { FadeInDown } from "react-native-reanimated";
 
 import { palette } from "@/theme/palette";
+
+import { FortuneRoomPrivacyPolicy } from "./fortune-room-privacy-policy";
 
 type FortuneRoomHomeSettingsProps = {
   visible: boolean;
@@ -37,32 +40,67 @@ function SettingRow({
 }
 
 export function FortuneRoomHomeSettings(props: FortuneRoomHomeSettingsProps) {
+  const [privacyVisible, setPrivacyVisible] = useState(false);
+
+  useEffect(() => {
+    if (!props.visible) setPrivacyVisible(false);
+  }, [props.visible]);
+
+  const handleClose = () => {
+    if (privacyVisible) {
+      setPrivacyVisible(false);
+      return;
+    }
+    props.onClose();
+  };
+
   return (
     <Modal
       transparent
       statusBarTranslucent
       animationType="fade"
       visible={props.visible}
-      onRequestClose={props.onClose}
+      onRequestClose={handleClose}
     >
       <SafeAreaView style={styles.modalRoot}>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="Закрыть настройки"
-          onPress={props.onClose}
+          onPress={handleClose}
           style={styles.backdrop}
         />
-        <Animated.View entering={FadeInDown.duration(240)} style={styles.panel}>
-          <View style={styles.handle} />
-          <Text style={styles.title}>НАСТРОЙКИ</Text>
-          <SettingRow label="Звук" value={props.soundEnabled} onValueChange={props.onSoundChange} />
-          <View style={styles.divider} />
-          <SettingRow
-            label="Вибрация"
-            value={props.hapticEnabled}
-            onValueChange={props.onHapticChange}
-          />
-          <Text style={styles.version}>FORTUNE ROOM · 0.1.0</Text>
+        <Animated.View
+          entering={FadeInDown.duration(240)}
+          style={[styles.panel, privacyVisible && styles.privacyPanel]}
+        >
+          {privacyVisible ? (
+            <FortuneRoomPrivacyPolicy onClose={() => setPrivacyVisible(false)} />
+          ) : (
+            <>
+              <View style={styles.handle} />
+              <Text style={styles.title}>НАСТРОЙКИ</Text>
+              <SettingRow
+                label="Звук"
+                value={props.soundEnabled}
+                onValueChange={props.onSoundChange}
+              />
+              <View style={styles.divider} />
+              <SettingRow
+                label="Вибрация"
+                value={props.hapticEnabled}
+                onValueChange={props.onHapticChange}
+              />
+              <Pressable
+                accessibilityRole="link"
+                hitSlop={8}
+                onPress={() => setPrivacyVisible(true)}
+                style={({ pressed }) => [styles.privacyLink, pressed && styles.linkPressed]}
+              >
+                <Text style={styles.privacyLinkText}>Политика конфиденциальности</Text>
+              </Pressable>
+              <Text style={styles.version}>FORTUNE ROOM · 0.1.0</Text>
+            </>
+          )}
         </Animated.View>
       </SafeAreaView>
     </Modal>
@@ -90,6 +128,13 @@ const styles = StyleSheet.create({
     borderColor: "rgba(199,146,74,0.28)",
     backgroundColor: "rgba(13,16,18,0.97)",
   },
+  privacyPanel: {
+    height: "88%",
+    paddingHorizontal: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    overflow: "hidden",
+  },
   handle: {
     alignSelf: "center",
     width: 34,
@@ -113,8 +158,16 @@ const styles = StyleSheet.create({
   },
   rowLabel: { color: "rgba(245,235,215,0.92)", fontSize: 16 },
   divider: { height: 1, backgroundColor: "rgba(231,217,190,0.09)" },
+  privacyLink: { alignSelf: "flex-start", paddingVertical: 8 },
+  privacyLinkText: {
+    color: "rgba(231,217,190,0.46)",
+    fontSize: 10,
+    lineHeight: 15,
+    textDecorationLine: "underline",
+  },
+  linkPressed: { opacity: 0.62 },
   version: {
-    marginTop: 13,
+    marginTop: 3,
     color: "rgba(231,217,190,0.36)",
     fontSize: 9,
     letterSpacing: 1.5,
