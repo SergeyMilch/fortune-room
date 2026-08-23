@@ -31,7 +31,7 @@ export function validateFortuneCookieContent(entries: readonly FortuneCookieEntr
     if (ids.has(entry.id)) throw new Error(`Duplicate Fortune Cookie id: ${entry.id}`);
     if (texts.has(entry.text)) throw new Error(`Duplicate Fortune Cookie text: ${entry.text}`);
     if (!validTones.has(entry.tone)) throw new Error(`Invalid Fortune Cookie tone: ${entry.tone}`);
-    if (entry.text.length < 30 || entry.text.length > 85 || words < 5 || words > 13) {
+    if (entry.text.length < 30 || entry.text.length > 110 || words < 5 || words > 16) {
       throw new Error(`Fortune Cookie entry ${entry.id} is outside the approved length.`);
     }
     ids.add(entry.id);

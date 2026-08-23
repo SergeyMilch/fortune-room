@@ -7,6 +7,8 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 import { prepareStartupAssets } from "@/startup/startup-assets";
 import { StartupLoadingScreen } from "@/startup/startup-loading-screen";
+import { rustoreReleaseService } from "@/services/rustore-release-service";
+import { yandexRewardedService } from "@/ads/yandex-rewarded-service";
 import { palette } from "@/theme/palette";
 
 void SplashScreen.preventAutoHideAsync().catch(() => undefined);
@@ -27,6 +29,13 @@ export default function RootLayout() {
       active = false;
     };
   }, []);
+
+  useEffect(() => {
+    if (assetsReady) {
+      void rustoreReleaseService.checkForUpdateOnLaunch();
+      void yandexRewardedService.initializeAndPreload();
+    }
+  }, [assetsReady]);
 
   const handleLoadingScreenVisible = useCallback(() => {
     void SplashScreen.hideAsync();

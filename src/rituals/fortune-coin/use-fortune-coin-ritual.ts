@@ -10,6 +10,7 @@ import {
 
 import { audioService } from "@/services/audio-service";
 import { hapticService } from "@/services/haptic-service";
+import { rustoreReleaseService } from "@/services/rustore-release-service";
 
 import { drawCoinOutcome, drawCoinReading, type CoinOutcome } from "./coin-content";
 import {
@@ -143,6 +144,7 @@ export function useFortuneCoinRitual() {
     schedule(() => {
       lockedRef.current = false;
       updatePhase("completed");
+      void rustoreReleaseService.recordCompletedRitual();
     }, profile.durationMs + 580);
   }, [charge, clearTimers, driftX, motion, returnToIdle, reveal, schedule, targetFace, throwHeight, turns, updatePhase]);
 

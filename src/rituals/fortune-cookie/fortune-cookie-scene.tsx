@@ -45,34 +45,49 @@ function PaperPredictionText({
   text,
   fontFamily,
   baseFontSize,
+  maxTextHeight,
 }: {
   text: string;
   fontFamily: string;
   baseFontSize: number;
+  maxTextHeight: number;
 }) {
-  const [fontSize, setFontSize] = useState(baseFontSize);
-  const minimumFontSize = Math.max(14, baseFontSize * 0.72);
   const displayText = text.replace(/\.+\s*$/u, "");
+  const [fontSize, setFontSize] = useState(baseFontSize);
+  const minimumFontSize = Math.max(8.5, baseFontSize * 0.42);
 
   useEffect(() => {
     setFontSize(baseFontSize);
-  }, [baseFontSize]);
+  }, [baseFontSize, displayText]);
 
   return (
     <Text
+      key={`${displayText}-${fontSize}`}
       allowFontScaling={false}
       onTextLayout={(event) => {
-        if (event.nativeEvent.lines.length <= 2) return;
-        setFontSize((current) => current > minimumFontSize
-          ? Math.max(minimumFontSize, current - 1)
-          : current);
+        const lineCount = event.nativeEvent.lines.length;
+        const isBaseSize = fontSize === baseFontSize;
+        const fitsRequestedLayout = isBaseSize
+          ? lineCount <= 2
+          : lineCount <= 3 && lineCount * fontSize <= maxTextHeight;
+
+        if (fitsRequestedLayout) return;
+
+        setFontSize((current) => {
+          if (current !== fontSize || current <= minimumFontSize) return current;
+
+          const nextSize = isBaseSize
+            ? Math.min(baseFontSize * 0.9, maxTextHeight / 3)
+            : current - 0.5;
+          return Math.max(minimumFontSize, nextSize);
+        });
       }}
       style={[
         styles.paperText,
         {
           fontFamily,
           fontSize,
-          lineHeight: fontSize * 1.08,
+          lineHeight: fontSize,
         },
       ]}
     >
@@ -254,15 +269,19 @@ function PaperReveal({
     };
   }, [geometry.scale, visible]);
   return (
-    <Animated.View pointerEvents="none" style={[styles.absolute, geometry.paper, style]}>
+    <Animated.View
+      pointerEvents="none"
+      style={[styles.absolute, styles.paperReveal, geometry.paper, style]}
+    >
       <Image source={assets.paper} contentFit="fill" transition={0} style={StyleSheet.absoluteFill} />
       <View
         style={[
           styles.paperTextWrap,
           {
             opacity: showText ? 1 : 0,
-            paddingVertical: geometry.paper.height * 0.54,
-            transform: [{ translateY: -2 }],
+            paddingHorizontal: geometry.paper.width * 0.065,
+            paddingVertical: geometry.paper.height * 0.13,
+            transform: [{ translateY: -1 }],
           },
         ]}
       >
@@ -271,6 +290,7 @@ function PaperReveal({
           text={entry?.text ?? ""}
           fontFamily={fontFamily}
           baseFontSize={paperFontSize}
+          maxTextHeight={geometry.paper.height * 0.74}
         />
       </View>
     </Animated.View>
@@ -395,14 +415,13 @@ const styles = StyleSheet.create({
     left: 0,
     alignItems: "center",
     justifyContent: "center",
-    paddingHorizontal: "8%",
-    paddingVertical: 0,
     zIndex: 2,
   },
+  paperReveal: { overflow: "visible" },
   paperText: {
     width: "100%",
     color: "#2D190B",
-    includeFontPadding: true,
+    includeFontPadding: false,
     textAlign: "center",
     textAlignVertical: "center",
     textShadowColor: "rgba(255,240,204,0.26)",

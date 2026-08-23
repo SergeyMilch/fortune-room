@@ -5,6 +5,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import { audioService } from "@/services/audio-service";
 import { palette } from "@/theme/palette";
+import { RewardedAccessModal } from "@/ads/rewarded-access-modal";
+import { useRitualRewardedAccess } from "@/ads/use-ritual-rewarded-access";
 
 import { getFortuneCookieGeometry } from "./fortune-cookie-geometry";
 import { FortuneCookieScene } from "./fortune-cookie-scene";
@@ -14,11 +16,16 @@ export function FortuneCookieScreen() {
   const { width, height } = useWindowDimensions();
   const geometry = useMemo(() => getFortuneCookieGeometry(width, height), [height, width]);
   const ritual = useFortuneCookieRitual();
+  const access = useRitualRewardedAccess("fortuneCookie");
 
   useEffect(() => {
     void audioService.activateFortuneCookieContext();
     return () => audioService.deactivateFortuneCookieContext();
   }, []);
+
+  useEffect(() => {
+    if (ritual.phase === "completed") access.recordResult();
+  }, [access.recordResult, ritual.phase]);
 
   const breakGesture = useMemo(() => {
     const pinch = Gesture.Pinch()
@@ -74,7 +81,7 @@ export function FortuneCookieScreen() {
         phase={ritual.phase}
         selectedCookie={ritual.selectedCookie}
         entry={ritual.entry}
-        onSelect={ritual.selectCookie}
+        onSelect={(index) => access.beginAttempt(() => ritual.selectCookie(index))}
         selectionProgress={ritual.selectionProgress}
         breakProgress={ritual.breakProgress}
         crumbProgress={ritual.crumbProgress}
@@ -120,7 +127,7 @@ export function FortuneCookieScreen() {
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Выбрать другое печенье"
-              onPress={ritual.resetRitual}
+              onPress={() => access.beginAttempt(ritual.resetRitual)}
               style={({ pressed }) => [styles.actionButton, pressed && styles.actionPressed]}
             >
               <Text style={styles.actionText}>ЕЩЁ ПЕЧЕНЬЕ</Text>
@@ -128,6 +135,7 @@ export function FortuneCookieScreen() {
           ) : null}
         </View>
       </SafeAreaView>
+      <RewardedAccessModal {...access.prompt} />
     </View>
   );
 }

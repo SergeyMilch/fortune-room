@@ -12,6 +12,7 @@ import {
 
 import { hapticService } from "@/services/haptic-service";
 import { audioService } from "@/services/audio-service";
+import { rustoreReleaseService } from "@/services/rustore-release-service";
 
 import {
   fortuneCookieContentService,
@@ -165,7 +166,10 @@ export function useFortuneCookieRitual() {
       easing: Easing.bezier(0.2, 0.72, 0.2, 1),
     });
     void hapticService.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    schedule(() => updatePhase("completed"), timing.paperRevealMs);
+    schedule(() => {
+      updatePhase("completed");
+      void rustoreReleaseService.recordCompletedRitual();
+    }, timing.paperRevealMs);
   }, [pullProgress, revealProgress, schedule, updatePhase]);
 
   const endPaperPull = useCallback(() => {

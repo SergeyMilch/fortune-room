@@ -15,7 +15,7 @@ const source = {
   selectedCookie: { left: 273, top: 830, width: 340, height: 298 },
   leftHalf: { left: 190, top: 918, width: 235, height: 301 },
   rightHalf: { left: 492, top: 918, width: 200, height: 302 },
-  paper: { left: 118, top: 742, width: 650, height: 121 },
+  paper: { left: 48, top: 729, width: 790, height: 147 },
   breakGesture: { left: 155, top: 790, width: 577, height: 485 },
   paperGesture: { left: 292, top: 850, width: 303, height: 420 },
 } as const;

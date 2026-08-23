@@ -1,7 +1,10 @@
+import { useEffect } from "react";
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { palette } from "@/theme/palette";
+import { RewardedAccessModal } from "@/ads/rewarded-access-modal";
+import { useRitualRewardedAccess } from "@/ads/use-ritual-rewarded-access";
 
 import { getFortuneBookGeometry } from "./fortune-book-geometry";
 import { FortuneBookScene } from "./fortune-book-scene";
@@ -11,6 +14,11 @@ export function FortuneBookScreen() {
   const { width, height } = useWindowDimensions();
   const geometry = getFortuneBookGeometry(width, height);
   const ritual = useFortuneBookRitual();
+  const access = useRitualRewardedAccess("fortuneBook");
+
+  useEffect(() => {
+    if (ritual.phase === "result") access.recordResult();
+  }, [access.recordResult, ritual.phase]);
 
   const instruction =
     ritual.phase === "closed"
@@ -47,7 +55,7 @@ export function FortuneBookScreen() {
           accessibilityLabel="Книга судьбы"
           accessibilityHint="Коснитесь, чтобы открыть книгу"
           hitSlop={8}
-          onPress={ritual.startRitual}
+          onPress={() => access.beginAttempt(ritual.startRitual)}
           style={{
             position: "absolute",
             left: geometry.closedBook.left,
@@ -88,7 +96,7 @@ export function FortuneBookScreen() {
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Спросить снова"
-              onPress={ritual.resetRitual}
+              onPress={() => access.beginAttempt(ritual.resetRitual)}
               style={({ pressed }) => [styles.actionButton, pressed && styles.actionPressed]}
             >
               <Text style={styles.actionText}>СПРОСИТЬ СНОВА</Text>
@@ -96,6 +104,7 @@ export function FortuneBookScreen() {
           ) : null}
         </View>
       </SafeAreaView>
+      <RewardedAccessModal {...access.prompt} />
     </View>
   );
 }

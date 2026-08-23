@@ -11,6 +11,7 @@ import {
 
 import { audioService } from "@/services/audio-service";
 import { hapticService } from "@/services/haptic-service";
+import { rustoreReleaseService } from "@/services/rustore-release-service";
 
 import {
   crystalBallPredictionService,
@@ -78,6 +79,7 @@ export function useCrystalBallRitual() {
     settleTimer.current = setTimeout(() => {
       updatePhase("revealed");
       void hapticService.selectionAsync();
+      void rustoreReleaseService.recordCompletedRitual();
     }, ritualDurationMs);
   }, [prediction, ritual, updatePhase]);
 

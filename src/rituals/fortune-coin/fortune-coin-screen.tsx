@@ -1,10 +1,12 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 
 import { palette } from "@/theme/palette";
+import { RewardedAccessModal } from "@/ads/rewarded-access-modal";
+import { useRitualRewardedAccess } from "@/ads/use-ritual-rewarded-access";
 
 import { getFortuneCoinGeometry } from "./fortune-coin-geometry";
 import { FortuneCoinScene } from "./fortune-coin-scene";
@@ -14,6 +16,12 @@ export function FortuneCoinScreen() {
   const { width, height } = useWindowDimensions();
   const geometry = useMemo(() => getFortuneCoinGeometry(width, height), [height, width]);
   const ritual = useFortuneCoinRitual();
+  const access = useRitualRewardedAccess("coin");
+  const gestureAuthorizedRef = useRef(false);
+
+  useEffect(() => {
+    if (ritual.phase === "completed") access.recordResult();
+  }, [access.recordResult, ritual.phase]);
 
   const flickGesture = useMemo(
     () => Gesture.Pan()
@@ -21,15 +29,21 @@ export function FortuneCoinScreen() {
       .maxPointers(1)
       .runOnJS(true)
       .shouldCancelWhenOutside(false)
-      .onBegin(ritual.beginTouch)
+      .onBegin(() => {
+        gestureAuthorizedRef.current = access.beginAttempt(ritual.beginTouch, false);
+      })
       .onEnd((event) => {
+        if (!gestureAuthorizedRef.current) return;
         ritual.releaseCoin({
           upwardDistance: Math.max(0, -event.translationY) / Math.max(1, 150 * geometry.scale),
           upwardVelocity: Math.max(0, -event.velocityY) / Math.max(1, 1100 * geometry.scale),
           horizontalOffset: (event.translationX + event.velocityX * 0.045) / Math.max(0.1, geometry.scale),
         });
+      })
+      .onFinalize(() => {
+        gestureAuthorizedRef.current = false;
       }),
-    [geometry.scale, ritual.beginTouch, ritual.releaseCoin],
+    [access.beginAttempt, geometry.scale, ritual.beginTouch, ritual.releaseCoin],
   );
 
   const instruction =
@@ -103,7 +117,7 @@ export function FortuneCoinScreen() {
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Подбросить снова"
-              onPress={ritual.resetRitual}
+              onPress={() => access.beginAttempt(ritual.resetRitual)}
               style={({ pressed }) => [styles.actionButton, pressed && styles.actionPressed]}
             >
               <Text style={styles.actionText}>ПОДБРОСИТЬ СНОВА</Text>
@@ -111,6 +125,7 @@ export function FortuneCoinScreen() {
           ) : null}
         </View>
       </SafeAreaView>
+      <RewardedAccessModal {...access.prompt} />
     </View>
   );
 }
@@ -203,4 +218,3 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
 });
-

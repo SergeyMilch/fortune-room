@@ -10,6 +10,7 @@ import {
 
 import { audioService } from "@/services/audio-service";
 import { hapticService } from "@/services/haptic-service";
+import { rustoreReleaseService } from "@/services/rustore-release-service";
 
 import { drawRuneSpread } from "./runes-content";
 
@@ -134,6 +135,7 @@ export function useRunesRitual() {
     schedule(() => {
       updatePhase("completed");
       audioService.playRuneReveal();
+      void rustoreReleaseService.recordCompletedRitual();
     }, ARRANGE_MS);
   }, [schedule, selectedIndexes, updatePhase]);
 

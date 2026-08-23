@@ -1,10 +1,12 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from "react-native";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 
 import { palette } from "@/theme/palette";
+import { RewardedAccessModal } from "@/ads/rewarded-access-modal";
+import { useRitualRewardedAccess } from "@/ads/use-ritual-rewarded-access";
 
 import { buildRuneReading } from "./runes-content";
 import { getRunesGeometry } from "./runes-geometry";
@@ -15,21 +17,34 @@ export function RunesScreen() {
   const { width, height } = useWindowDimensions();
   const geometry = useMemo(() => getRunesGeometry(width, height), [height, width]);
   const ritual = useRunesRitual();
+  const access = useRitualRewardedAccess("runes");
+  const mixAuthorizedRef = useRef(false);
+  const castAuthorizedRef = useRef(false);
   const selectedRunes = ritual.selectedIndexes.map((index) => ritual.spread[index]);
   const reading = buildRuneReading(selectedRunes);
+
+  useEffect(() => {
+    if (ritual.phase === "completed") access.recordResult();
+  }, [access.recordResult, ritual.phase]);
 
   const mixGesture = useMemo(
     () => Gesture.Pan()
       .minDistance(4)
       .runOnJS(true)
       .shouldCancelWhenOutside(false)
-      .onBegin(ritual.beginMix)
+      .onBegin(() => {
+        mixAuthorizedRef.current = access.beginAttempt(ritual.beginMix, false);
+      })
       .onUpdate((event) => {
+        if (!mixAuthorizedRef.current) return;
         const distance = Math.hypot(event.translationX, event.translationY);
         ritual.updateMix(distance / Math.max(1, 145 * geometry.scale));
       })
-      .onFinalize(ritual.endMix),
-    [geometry.scale, ritual.beginMix, ritual.endMix, ritual.updateMix],
+      .onFinalize(() => {
+        if (mixAuthorizedRef.current) ritual.endMix();
+        mixAuthorizedRef.current = false;
+      }),
+    [access.beginAttempt, geometry.scale, ritual.beginMix, ritual.endMix, ritual.updateMix],
   );
 
   const castGesture = useMemo(
@@ -38,12 +53,18 @@ export function RunesScreen() {
       .minDistance(8)
       .runOnJS(true)
       .shouldCancelWhenOutside(false)
-      .onBegin(ritual.beginCast)
+      .onBegin(() => {
+        castAuthorizedRef.current = access.beginAttempt(ritual.beginCast, false);
+      })
       .onUpdate((event) => {
+        if (!castAuthorizedRef.current) return;
         ritual.updateCast(Math.max(0, -event.translationY) / Math.max(1, 150 * geometry.scale));
       })
-      .onFinalize(ritual.endCast),
-    [geometry.scale, ritual.beginCast, ritual.endCast, ritual.updateCast],
+      .onFinalize(() => {
+        if (castAuthorizedRef.current) ritual.endCast();
+        castAuthorizedRef.current = false;
+      }),
+    [access.beginAttempt, geometry.scale, ritual.beginCast, ritual.endCast, ritual.updateCast],
   );
 
   const instruction =
@@ -132,7 +153,7 @@ export function RunesScreen() {
             <Pressable
               accessibilityRole="button"
               accessibilityLabel="Новый расклад"
-              onPress={ritual.resetRitual}
+              onPress={() => access.beginAttempt(ritual.resetRitual)}
               style={({ pressed }) => [styles.actionButton, pressed && styles.actionPressed]}
             >
               <Text style={styles.actionText}>НОВЫЙ РАСКЛАД</Text>
@@ -140,6 +161,7 @@ export function RunesScreen() {
           ) : null}
         </View>
       </SafeAreaView>
+      <RewardedAccessModal {...access.prompt} />
     </View>
   );
 }

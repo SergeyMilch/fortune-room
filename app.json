@@ -9,10 +9,24 @@
     "scheme": "fortuneroom",
     "android": {
       "package": "com.pushkin85.mil.fortuneroom",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/branding/icon.png",
         "backgroundColor": "#06090D"
-      }
+      },
+      "permissions": [
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA"
+      ]
     },
     "plugins": [
       "expo-router",
@@ -38,6 +52,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "cd81d49f-b272-4180-b98e-8d338a80fd18"
+      }
+    },
+    "owner": "pushkin85.mil"
   }
 }

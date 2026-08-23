@@ -11,6 +11,7 @@ import {
 } from "react-native-reanimated";
 
 import { hapticService } from "@/services/haptic-service";
+import { rustoreReleaseService } from "@/services/rustore-release-service";
 import { audioService } from "@/services/audio-service";
 
 import {
@@ -163,6 +164,7 @@ export function useFortuneBookRitual() {
       schedule(() => {
         updatePhase("result");
         void hapticService.selectionAsync();
+        void rustoreReleaseService.recordCompletedRitual();
       }, timing.revealMs);
     }, timing.selectionPauseMs);
   }, [entries, revealProgress, schedule, selectionProgress, updatePhase]);

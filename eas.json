@@ -1,0 +1,48 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_APP_ENV": "development",
+        "EXPO_PUBLIC_RUSTORE_REVIEW_ENABLED": "false",
+        "EXPO_PUBLIC_RUSTORE_UPDATE_ENABLED": "false",
+        "EXPO_PUBLIC_YANDEX_ADS_ENABLED": "false",
+        "EXPO_PUBLIC_YANDEX_REWARDED_AD_UNIT_ID": "demo-rewarded-yandex",
+        "EXPO_PUBLIC_REWARDED_GATE_ENABLED": "false"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_APP_ENV": "preview",
+        "EXPO_PUBLIC_RUSTORE_REVIEW_ENABLED": "false",
+        "EXPO_PUBLIC_RUSTORE_UPDATE_ENABLED": "false",
+        "EXPO_PUBLIC_YANDEX_ADS_ENABLED": "true",
+        "EXPO_PUBLIC_YANDEX_REWARDED_AD_UNIT_ID": "demo-rewarded-yandex",
+        "EXPO_PUBLIC_REWARDED_GATE_ENABLED": "true"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_APP_ENV": "production",
+        "EXPO_PUBLIC_RUSTORE_REVIEW_ENABLED": "true",
+        "EXPO_PUBLIC_RUSTORE_UPDATE_ENABLED": "true",
+        "EXPO_PUBLIC_YANDEX_ADS_ENABLED": "true",
+        "EXPO_PUBLIC_YANDEX_REWARDED_AD_UNIT_ID": "R-M-19801223-1",
+        "EXPO_PUBLIC_REWARDED_GATE_ENABLED": "true"
+      }
+    }
+  }
+}

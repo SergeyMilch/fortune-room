@@ -6,6 +6,10 @@
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
+    "export:phrases": "node scripts/export-ritual-phrases.cjs",
+    "import:crystal-ball-phrases": "node scripts/import-crystal-ball-phrases.cjs",
+    "import:fortune-cookie-phrases": "node scripts/import-fortune-cookie-phrases.cjs",
+    "import:fortune-book-phrases": "node scripts/import-fortune-book-phrases.cjs",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "doctor": "expo-doctor"
@@ -28,9 +32,12 @@
     "react-native": "0.85.3",
     "react-native-gesture-handler": "~2.31.1",
     "react-native-reanimated": "4.3.1",
+    "react-native-rustore-review": "git+https://git@gitflic.ru/project/rustore/react-native-rustore-review-sdk.git#6.1.0",
+    "react-native-rustore-update": "git+https://git@gitflic.ru/project/rustore/react-native-rustore-update-sdk.git#6.0.0",
     "react-native-safe-area-context": "~5.7.0",
     "react-native-web": "~0.21.0",
-    "react-native-worklets": "0.8.x"
+    "react-native-worklets": "0.8.x",
+    "yandex-mobile-ads": "8.3.0"
   },
   "devDependencies": {
     "@types/react": "~19.2.2",

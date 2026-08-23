@@ -1,9 +1,12 @@
+import { useEffect, useRef } from "react";
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from "react-native";
 import { useFonts } from "expo-font";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Animated, { interpolate, useAnimatedStyle } from "react-native-reanimated";
 
 import { palette } from "@/theme/palette";
+import { RewardedAccessModal } from "@/ads/rewarded-access-modal";
+import { useRitualRewardedAccess } from "@/ads/use-ritual-rewarded-access";
 
 import {
   CrystalBallCandleResponse,
@@ -28,7 +31,21 @@ export function CrystalBallScreen() {
   const { sphere, prediction: predictionRegion } = geometry;
   const { phase, currentPrediction, touch, ritual, prediction, onPressIn, onPressOut } =
     useCrystalBallRitual();
+  const access = useRitualRewardedAccess("crystalBall");
+  const pressAuthorizedRef = useRef(false);
   useCrystalBallAudio(ritual, prediction);
+
+  useEffect(() => {
+    if (phase === "revealed") access.recordResult();
+  }, [access.recordResult, phase]);
+
+  const handlePressIn = () => {
+    pressAuthorizedRef.current = access.beginAttempt(onPressIn, false);
+  };
+  const handlePressOut = () => {
+    if (pressAuthorizedRef.current) onPressOut();
+    pressAuthorizedRef.current = false;
+  };
 
   const orbStyle = useAnimatedStyle(() => {
     const peak = Math.max(0, (ritual.value - 0.78) / 0.22) * (1 - prediction.value);
@@ -166,8 +183,8 @@ export function CrystalBallScreen() {
         accessibilityLabel="Хрустальный шар"
         accessibilityHint="Нажмите и удерживайте, чтобы получить знак"
         hitSlop={Math.max(8, sphere.diameter * 0.04)}
-        onPressIn={onPressIn}
-        onPressOut={onPressOut}
+        onPressIn={handlePressIn}
+        onPressOut={handlePressOut}
         style={{
           position: "absolute",
           left: sphere.left,
@@ -186,6 +203,7 @@ export function CrystalBallScreen() {
           <Text selectable style={styles.holdHint}>КОСНИСЬ И УДЕРЖИВАЙ</Text>
         </View>
       </SafeAreaView>
+      <RewardedAccessModal {...access.prompt} />
     </View>
   );
 }
