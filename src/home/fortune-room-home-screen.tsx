@@ -1,7 +1,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import * as Haptics from "expo-haptics";
 import { useRouter, type Href } from "expo-router";
-import { Pressable, StyleSheet, Text, useWindowDimensions, View } from "react-native";
+import {
+  type LayoutChangeEvent,
+  Pressable,
+  StyleSheet,
+  Text,
+  useWindowDimensions,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Animated, { FadeInDown, FadeOutDown } from "react-native-reanimated";
 
@@ -21,7 +28,11 @@ import { FortuneRoomHomeSettings } from "./fortune-room-home-settings";
 export function FortuneRoomHomeScreen() {
   const router = useRouter();
   const { width, height } = useWindowDimensions();
-  const geometry = useMemo(() => getHomeGeometry(width, height), [height, width]);
+  const [sceneSize, setSceneSize] = useState({ width, height });
+  const geometry = useMemo(
+    () => getHomeGeometry(sceneSize.width, sceneSize.height),
+    [sceneSize.height, sceneSize.width],
+  );
   const [focusedItem, setFocusedItem] = useState<HomeItemId | null>(null);
   const [hint, setHint] = useState<string | null>(null);
   const [settingsVisible, setSettingsVisible] = useState(false);
@@ -88,8 +99,16 @@ export function FortuneRoomHomeScreen() {
     void hapticService.setHapticEnabled(enabled);
   }, []);
 
+  const handleSceneLayout = useCallback((event: LayoutChangeEvent) => {
+    const next = event.nativeEvent.layout;
+    setSceneSize((current) => {
+      if (current.width === next.width && current.height === next.height) return current;
+      return { width: next.width, height: next.height };
+    });
+  }, []);
+
   return (
-    <View style={styles.screen}>
+    <View onLayout={handleSceneLayout} style={styles.screen}>
       <FortuneRoomHomeScene geometry={geometry} focusedItem={focusedItem} />
 
       {homeItems.map((item) => {

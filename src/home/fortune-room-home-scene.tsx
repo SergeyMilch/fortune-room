@@ -122,10 +122,9 @@ export function FortuneRoomHomeScene({
     <View pointerEvents="none" style={StyleSheet.absoluteFill}>
       <Image
         source={homeScene}
-        contentFit="cover"
-        contentPosition="center"
+        contentFit="fill"
         transition={0}
-        style={StyleSheet.absoluteFill}
+        style={[styles.artwork, geometry.artwork]}
       />
       <CandleBreathing geometry={geometry} />
       {dust.map((particle) => <DustParticle key={`${particle.x}-${particle.y}`} {...particle} />)}
@@ -155,6 +154,7 @@ export function FortuneRoomHomeScene({
 }
 
 const styles = StyleSheet.create({
+  artwork: { position: "absolute" },
   candleGlow: {
     position: "absolute",
     backgroundColor: "#E6A85D",

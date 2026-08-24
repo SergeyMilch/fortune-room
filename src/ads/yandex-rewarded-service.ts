@@ -35,9 +35,11 @@ class YandexRewardedService {
   async showFor(ritualId: RitualId): Promise<RewardedShowResult> {
     if (!releaseFeatures.yandexAds) return "unavailable";
     if (this.showing || this.pendingRitualId !== null) return "busy";
+
     if (!this.loadedAd) {
-      void this.initializeAndPreload().then(() => this.preload());
-      return "unavailable";
+      await this.initializeAndPreload();
+      await this.preload();
+      if (!this.loadedAd) return "unavailable";
     }
 
     const ad = this.loadedAd;

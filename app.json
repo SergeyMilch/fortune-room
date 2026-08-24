@@ -11,7 +11,7 @@
       "package": "com.pushkin85.mil.fortuneroom",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/branding/icon.png",
+        "foregroundImage": "./assets/branding/adaptive-icon-foreground.png",
         "backgroundColor": "#06090D"
       },
       "permissions": [
@@ -44,7 +44,7 @@
         "expo-splash-screen",
         {
           "backgroundColor": "#06090D",
-          "image": "./assets/branding/icon.png",
+          "image": "./assets/branding/adaptive-icon-foreground.png",
           "imageWidth": 240,
           "resizeMode": "contain"
         }

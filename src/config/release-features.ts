@@ -1,4 +1,4 @@
-import Constants from "expo-constants";
+import Constants, { ExecutionEnvironment } from "expo-constants";
 import { Platform } from "react-native";
 
 export const runtimeConfig = Object.freeze({
@@ -10,7 +10,11 @@ export const runtimeConfig = Object.freeze({
   rustoreUpdateEnabled: process.env.EXPO_PUBLIC_RUSTORE_UPDATE_ENABLED === "true",
 });
 
-const isExpoGo = Constants.expoVersion !== null;
+// StoreClient also includes development builds, so executionEnvironment alone
+// cannot distinguish them from Expo Go. expoGoConfig is only populated by
+// Expo Go and remains null in standalone and development builds.
+const isExpoGo = Constants.executionEnvironment === ExecutionEnvironment.StoreClient
+  && Constants.expoGoConfig != null;
 const canUseAndroidNativeModules = Platform.OS === "android" && !isExpoGo;
 
 export const releaseFeatures = Object.freeze({
