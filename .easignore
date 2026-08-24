@@ -1,0 +1,34 @@
+# Dependencies and local Expo output
+node_modules/
+.expo/
+.expo-export-check/
+dist/
+web-build/
+
+# Repository metadata and local environment
+.git/
+.agents/
+.codex/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+
+# Source artwork and development-only material
+art-source/
+artifacts/
+content-editing/
+docs/
+scripts/
+
+# Visual QA and editable source assets; runtime counterparts live elsewhere
+assets/visual-proof/
+assets/**/proofs/
+assets/**/source/
+
+# Tests are not needed by Metro or the native build
+**/*.test.ts
+
+# Generated local-only Expo typing file
+expo-env.d.ts
