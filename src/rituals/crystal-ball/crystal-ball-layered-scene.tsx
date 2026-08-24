@@ -3,11 +3,14 @@ import { StyleSheet, View } from "react-native";
 import { Image } from "expo-image";
 import Animated from "react-native-reanimated";
 
+import type { CrystalBallGeometry } from "./crystal-ball-geometry";
+
 const layers = {
   approvedScene: require("../../../assets/crystal-ball/layers/static-layered-preview-no-flames.png"),
 } as const;
 
 type CrystalBallLayeredSceneProps = {
+  geometry: CrystalBallGeometry;
   sceneDimming: ReactNode;
   candleContent: ReactNode;
   orbStyle: object;
@@ -18,20 +21,26 @@ type CrystalBallLayeredSceneProps = {
   frontContent: ReactNode;
 };
 
-function SceneLayer({ source }: { source: number }) {
+function SceneLayer({
+  source,
+  geometry,
+}: {
+  source: number;
+  geometry: CrystalBallGeometry;
+}) {
   return (
     <Image
       pointerEvents="none"
       source={source}
-      contentFit="contain"
-      contentPosition="center"
+      contentFit="fill"
       transition={0}
-      style={StyleSheet.absoluteFill}
+      style={[styles.artwork, geometry.artwork]}
     />
   );
 }
 
 export function CrystalBallLayeredScene({
+  geometry,
   sceneDimming,
   candleContent,
   orbStyle,
@@ -43,7 +52,7 @@ export function CrystalBallLayeredScene({
 }: CrystalBallLayeredSceneProps) {
   return (
     <View pointerEvents="none" style={StyleSheet.absoluteFill}>
-      <SceneLayer source={layers.approvedScene} />
+      <SceneLayer source={layers.approvedScene} geometry={geometry} />
       {sceneDimming}
       {candleContent}
 
@@ -57,3 +66,7 @@ export function CrystalBallLayeredScene({
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  artwork: { position: "absolute" },
+});

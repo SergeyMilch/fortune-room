@@ -3,6 +3,10 @@ export const homeArtwork = {
   height: 1672,
 } as const;
 
+// Leave a little more of the horizontal composition visible on tall Android
+// screens. Every artwork-bound layer and hit region uses this same scale.
+export const HOME_SCENE_ZOOM = 0.93;
+
 export type HomeItemId = "crystalBall" | "book" | "cookie" | "coin" | "runes";
 
 export type HomeSourceRegion = {
@@ -82,10 +86,11 @@ function mapRegion(region: HomeSourceRegion, scale: number, left: number, top: n
 }
 
 export function getHomeGeometry(viewportWidth: number, viewportHeight: number): HomeGeometry {
-  const scale = Math.max(
+  const coverScale = Math.max(
     viewportWidth / homeArtwork.width,
     viewportHeight / homeArtwork.height,
   );
+  const scale = coverScale * HOME_SCENE_ZOOM;
   const width = homeArtwork.width * scale;
   const height = homeArtwork.height * scale;
   const left = (viewportWidth - width) / 2;

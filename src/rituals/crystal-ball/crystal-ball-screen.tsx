@@ -1,5 +1,12 @@
-import { useEffect, useRef } from "react";
-import { Pressable, StyleSheet, Text, useWindowDimensions, View } from "react-native";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  type LayoutChangeEvent,
+  Pressable,
+  StyleSheet,
+  Text,
+  useWindowDimensions,
+  View,
+} from "react-native";
 import { useFonts } from "expo-font";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Animated, { interpolate, useAnimatedStyle } from "react-native-reanimated";
@@ -27,7 +34,11 @@ export function CrystalBallScreen() {
     MrAkronim: require("../../../assets/fonts/mr-akronim.otf"),
   });
   const { width, height } = useWindowDimensions();
-  const geometry = getCrystalBallGeometry(width, height);
+  const [sceneSize, setSceneSize] = useState({ width, height });
+  const geometry = useMemo(
+    () => getCrystalBallGeometry(sceneSize.width, sceneSize.height),
+    [sceneSize.height, sceneSize.width],
+  );
   const { sphere, prediction: predictionRegion } = geometry;
   const { phase, currentPrediction, touch, ritual, prediction, onPressIn, onPressOut } =
     useCrystalBallRitual();
@@ -46,6 +57,14 @@ export function CrystalBallScreen() {
     if (pressAuthorizedRef.current) onPressOut();
     pressAuthorizedRef.current = false;
   };
+
+  const handleSceneLayout = useCallback((event: LayoutChangeEvent) => {
+    const next = event.nativeEvent.layout;
+    setSceneSize((current) => {
+      if (current.width === next.width && current.height === next.height) return current;
+      return { width: next.width, height: next.height };
+    });
+  }, []);
 
   const orbStyle = useAnimatedStyle(() => {
     const peak = Math.max(0, (ritual.value - 0.78) / 0.22) * (1 - prediction.value);
@@ -102,13 +121,18 @@ export function CrystalBallScreen() {
     : undefined;
 
   return (
-    <View style={styles.screen}>
+    <View onLayout={handleSceneLayout} style={styles.screen}>
       <CrystalBallLayeredScene
+        geometry={geometry}
         sceneDimming={<Animated.View pointerEvents="none" style={[styles.environmentDim, dimStyle]} />}
         candleContent={
           <>
             <CandleFlameFlipbook geometry={geometry} />
-            <CrystalBallCandleResponse ritual={ritual} prediction={prediction} />
+            <CrystalBallCandleResponse
+              geometry={geometry}
+              ritual={ritual}
+              prediction={prediction}
+            />
           </>
         }
         orbStyle={[
@@ -175,7 +199,13 @@ export function CrystalBallScreen() {
           />
         }
         glassContent={<CrystalBallGlassShimmer sphere={sphere} prediction={prediction} />}
-        frontContent={<CrystalBallFrontSmoke ritual={ritual} prediction={prediction} />}
+        frontContent={
+          <CrystalBallFrontSmoke
+            geometry={geometry}
+            ritual={ritual}
+            prediction={prediction}
+          />
+        }
       />
 
       <Pressable

@@ -41,6 +41,14 @@
       ],
       "expo-sqlite",
       [
+        "expo-navigation-bar",
+        {
+          "enforceContrast": false,
+          "hidden": false,
+          "style": "light"
+        }
+      ],
+      [
         "expo-splash-screen",
         {
           "backgroundColor": "#06090D",

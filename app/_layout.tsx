@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import Constants from "expo-constants";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
+import { NavigationBar } from "expo-navigation-bar";
 import { StatusBar } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
@@ -48,6 +49,7 @@ export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1, backgroundColor: palette.ink }}>
       <StatusBar barStyle="light-content" backgroundColor={palette.ink} />
+      <NavigationBar style="light" />
       {assetsReady ? (
         <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: palette.ink } }}>
           <Stack.Screen name="index" />

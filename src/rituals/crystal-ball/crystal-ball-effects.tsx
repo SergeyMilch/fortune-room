@@ -130,7 +130,11 @@ export function CrystalBallSmokeLayer({
   );
 }
 
-export function CrystalBallCandleResponse({ ritual, prediction }: RitualValues) {
+export function CrystalBallCandleResponse({
+  geometry,
+  ritual,
+  prediction,
+}: RitualValues & { geometry: CrystalBallGeometry }) {
   const style = useAnimatedStyle(() => ({
     opacity: crystalBallVfx.candlePeak * peakProgress(ritual.value, prediction.value),
     transform: [{ scale: 1 + peakProgress(ritual.value, prediction.value) * (VFX_DEBUG ? 0.025 : 0.012) }],
@@ -138,7 +142,12 @@ export function CrystalBallCandleResponse({ ritual, prediction }: RitualValues) 
 
   return (
     <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, style]}>
-      <Image source={masks.candleLight} contentFit="contain" contentPosition="center" tintColor="#F0A13D" style={StyleSheet.absoluteFill} />
+      <Image
+        source={masks.candleLight}
+        contentFit="fill"
+        tintColor="#F0A13D"
+        style={[styles.artwork, geometry.artwork]}
+      />
     </Animated.View>
   );
 }
@@ -170,7 +179,11 @@ export function CrystalBallGlassShimmer({ sphere, prediction }: { sphere: Sphere
   );
 }
 
-export function CrystalBallFrontSmoke({ ritual, prediction }: RitualValues) {
+export function CrystalBallFrontSmoke({
+  geometry,
+  ritual,
+  prediction,
+}: RitualValues & { geometry: CrystalBallGeometry }) {
   const style = useAnimatedStyle(() => {
     const activity = ritual.value * (1 - prediction.value * 0.62);
     return {
@@ -185,7 +198,16 @@ export function CrystalBallFrontSmoke({ ritual, prediction }: RitualValues) {
 
   return (
     <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, style]}>
-      <Image source={masks.smokeOuter} contentFit="contain" contentPosition="center" tintColor="#B4D0D4" style={StyleSheet.absoluteFill} />
+      <Image
+        source={masks.smokeOuter}
+        contentFit="fill"
+        tintColor="#B4D0D4"
+        style={[styles.artwork, geometry.artwork]}
+      />
     </Animated.View>
   );
 }
+
+const styles = StyleSheet.create({
+  artwork: { position: "absolute" },
+});
